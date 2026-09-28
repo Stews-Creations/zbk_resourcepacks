@@ -1,0 +1,80 @@
+name: Release Core resource packs
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the tagged revision
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Verify pack versions
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$GITHUB_REF_NAME" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || {
+            echo "Expected a version tag such as v1.0.0" >&2
+            exit 1
+          }
+          version="${GITHUB_REF_NAME#v}"
+          for pack in zombies_build_kit zombies_build_kit_vivecraft_overlay; do
+            test "$(tr -d '\r\n' < "$pack/VERSION")" = "$version" || {
+              echo "$pack/VERSION does not match $GITHUB_REF_NAME" >&2
+              exit 1
+            }
+            python3 - "$pack/pack.mcmeta" "$version" <<'PY'
+          import json
+          import sys
+
+          metadata = json.load(open(sys.argv[1], encoding="utf-8"))
+          if metadata["zbk"]["version"] != sys.argv[2]:
+              raise SystemExit(f"{sys.argv[1]} version does not match tag")
+          PY
+          done
+
+      - name: Package Core and Vivecraft overlay
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          git archive --format=zip --output="dist/zombies_build_kit-${GITHUB_REF_NAME}.zip" HEAD:zombies_build_kit
+          git archive --format=zip --output="dist/zombies_build_kit_vivecraft_overlay-${GITHUB_REF_NAME}.zip" HEAD:zombies_build_kit_vivecraft_overlay
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          archives = sorted(Path("dist").glob("*.zip"))
+          if len(archives) != 2:
+              raise SystemExit("Release must contain exactly two pack archives")
+          for archive in archives:
+              with ZipFile(archive) as packaged:
+                  names = set(packaged.namelist())
+                  if "pack.mcmeta" not in names or "VERSION" not in names:
+                      raise SystemExit(f"{archive} has no pack metadata at ZIP root")
+                  if not any(name.startswith("assets/zbk/") for name in names):
+                      raise SystemExit(f"{archive} has no Core assets")
+                  if any("AGENTS.md" in name or "/.codex/" in name for name in names):
+                      raise SystemExit(f"{archive} contains local-only files")
+                  print(f"{archive}: {len(names)} entries")
+          PY
+
+      - name: Publish GitHub release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            dist/zombies_build_kit-"$GITHUB_REF_NAME".zip \
+            dist/zombies_build_kit_vivecraft_overlay-"$GITHUB_REF_NAME".zip \
+            --title "Zombies Build Kit $GITHUB_REF_NAME" \
+            --generate-notes \
+            --verify-tag

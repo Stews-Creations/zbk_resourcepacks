@@ -1,21 +1,30 @@
 # Zombies Build Kit Resource Packs
 
-This repository contains the installable Core resource pack, optional map resource packs, and optional Vivecraft overlays. Core supplies shared ZBK item models, textures, HUD fonts, gameplay audio, and generated shared models. Map packs supply only their map assets and require the matching Core datapack and resource pack.
+This repository contains the installable Core resource pack, its optional Vivecraft overlay, and source references for map-specific assets. Core supplies shared ZBK item models, textures, HUD fonts, gameplay audio, and generated shared models. Released map worlds bundle their required Core and map resource assets.
 
-## Install and package
+## Install
 
-1. Copy each selected pack folder into `.minecraft/resourcepacks`, or ZIP each folder's contents so `pack.mcmeta` is at the ZIP root.
-2. For a map, place its pack above Core. Enable Vivecraft overlays above the corresponding base packs.
+### Play a released ZBK map
+
+Download the map's world file and follow its installation instructions. The world file includes its required resource pack content, so players do not need to download any resource packs separately. The optional Vivecraft overlay is a separate download for players who want its held-weapon transforms.
+
+### Build your own world
+
+1. Download `zombies_build_kit-v<version>.zip` from the [latest resource pack release](https://github.com/Stews-Creations/zbk_resourcepacks/releases/latest), plus the matching [Core datapack](https://github.com/Stews-Creations/zbk_datapacks). Put the resource pack ZIP in `.minecraft/resourcepacks` and the datapack in the world's `datapacks` folder.
+2. If you use Vivecraft, also download `zombies_build_kit_vivecraft_overlay-v<version>.zip` from the same release and enable it above Core.
+3. If you are making a map, include its required map assets with the world you distribute. The map pack folders in this repository are source references, not separate GitHub release downloads.
+
+Both release ZIPs place `pack.mcmeta` at the ZIP root. Enable the Core resource pack in Minecraft; enable the optional overlay above it. Keep the datapack, resource pack, and overlay on matching versions.
 
 ## Supported combinations
 
 | World | Resource pack stack, highest priority first |
 | --- | --- |
-| Core only | Core Vivecraft overlay (optional), Core |
-| Nacht der Untoten | Core Vivecraft overlay (optional), Nacht, Core |
-| Der Eisendrache | DE Vivecraft overlay (optional), Core Vivecraft overlay (optional), DE, Core |
+| Custom Core world | Core Vivecraft overlay (optional), Core |
+| Nacht der Untoten world bundle | Core Vivecraft overlay (optional), Nacht, Core |
+| Der Eisendrache world bundle | DE Vivecraft overlay (optional), Core Vivecraft overlay (optional), DE, Core |
 
-Install only the matching map pack for a world. The DE pack intentionally overrides Minecraft's native inventory background with the original quest inventory board. The Core pack also owns its documented required Minecraft overrides.
+The map rows show resource priority inside a bundled world, not extra downloads for players. The DE pack intentionally overrides Minecraft's native inventory background with the original quest inventory board. The Core pack also owns its documented required Minecraft overrides.
 
 ## Override Core sounds
 
@@ -720,10 +729,14 @@ The Core sound catalog is [`assets/zbk/sounds.json`](zombies_build_kit/assets/zb
 
 | Folder | Use |
 | --- | --- |
-| [`zombies_build_kit`](zombies_build_kit/README.md) | Shared runtime assets used by Core |
-| [`zombies_build_kit_vivecraft_overlay`](zombies_build_kit_vivecraft_overlay/README.md) | Optional Vivecraft held-weapon transforms for Core |
-| [`zbk_nacht_der_untoten`](zbk_nacht_der_untoten/README.md) | Nacht der Untoten audio and map assets |
-| [`zbk_der_eisendrache`](zbk_der_eisendrache/README.md) | Der Eisendrache audio, models, textures, fonts, and inventory screen |
-| [`zbk_der_eisendrache_vivecraft_overlay`](zbk_der_eisendrache_vivecraft_overlay/README.md) | Optional Vivecraft bow transforms for Der Eisendrache |
+| [`zombies_build_kit`](zombies_build_kit/README.md) | Released Core runtime resource pack |
+| [`zombies_build_kit_vivecraft_overlay`](zombies_build_kit_vivecraft_overlay/README.md) | Released optional Core Vivecraft overlay |
+| [`zbk_nacht_der_untoten`](zbk_nacht_der_untoten/README.md) | Nacht source reference for world bundles; no separate release asset |
+| [`zbk_der_eisendrache`](zbk_der_eisendrache/README.md) | Der Eisendrache source reference for world bundles; no separate release asset |
+| [`zbk_der_eisendrache_vivecraft_overlay`](zbk_der_eisendrache_vivecraft_overlay/README.md) | DE Vivecraft source reference; no separate release asset |
+
+## GitHub releases
+
+The [release workflow](.github/workflows/release-core-packs.yml) runs when a `v<version>` tag is pushed, such as `v1.0.0`. The tag must match the `VERSION` and `pack.mcmeta` version in both Core packs. It publishes exactly two ZIP assets: `zombies_build_kit-v<version>.zip` and `zombies_build_kit_vivecraft_overlay-v<version>.zip`. Each archive contains the tracked contents of its pack folder with `pack.mcmeta` at the root. Map-specific folders are never release assets from this workflow.
 
 All installable packs use ZBK pack version 1.0.0 and retain Minecraft Java 26.2 resource format 88.0. Keep the license and attribution files with each pack when distributing it. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSE.md).
