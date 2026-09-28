@@ -1,13 +1,10 @@
 name: Release Core resource packs
 
 on:
-  push:
-    tags:
-      - 'v*'
   workflow_dispatch:
     inputs:
       version:
-        description: 'Existing release tag (vMAJOR.MINOR.PATCH)'
+        description: 'Release tag (vMAJOR.MINOR.PATCH; existing or new)'
         required: true
         type: string
 
@@ -18,22 +15,34 @@ jobs:
   release:
     runs-on: ubuntu-latest
     env:
-      RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.version || github.ref_name }}
+      RELEASE_TAG: ${{ inputs.version }}
     steps:
-      - name: Check out the tagged revision
+      - name: Check out release branch
         uses: actions/checkout@v5
-        with:
-          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.version || github.ref }}
-          persist-credentials: false
+
+      - name: Select release revision
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$GITHUB_REF" == 'refs/heads/main' ]] || {
+            echo 'Run releases from main.' >&2
+            exit 1
+          }
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || {
+            echo 'Release tags must use vMAJOR.MINOR.PATCH.' >&2
+            exit 1
+          }
+          if git ls-remote --exit-code --tags origin "refs/tags/$RELEASE_TAG" > /dev/null; then
+            git fetch --no-tags origin "refs/tags/$RELEASE_TAG:refs/tags/$RELEASE_TAG"
+            git checkout --detach "$RELEASE_TAG"
+          else
+            echo 'CREATE_TAG=1' >> "$GITHUB_ENV"
+          fi
 
       - name: Verify pack versions
         shell: bash
         run: |
           set -euo pipefail
-          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || {
-            echo "Expected a version tag such as v1.0.0" >&2
-            exit 1
-          }
           version="${RELEASE_TAG#v}"
           for pack in zombies_build_kit zombies_build_kit_vivecraft_overlay; do
             test "$(tr -d '\r\n' < "$pack/VERSION")" = "$version" || {
@@ -75,6 +84,14 @@ jobs:
                       raise SystemExit(f"{archive} contains local-only files")
                   print(f"{archive}: {len(names)} entries")
           PY
+
+      - name: Create tag for new release
+        if: env.CREATE_TAG == '1'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git tag "$RELEASE_TAG"
+          git push origin "refs/tags/$RELEASE_TAG"
 
       - name: Publish GitHub release
         shell: bash

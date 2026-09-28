@@ -735,8 +735,6 @@ The Core sound catalog is [`assets/zbk/sounds.json`](zombies_build_kit/assets/zb
 | [`zbk_der_eisendrache`](zbk_der_eisendrache/README.md) | Der Eisendrache source reference for world bundles; no separate release asset |
 | [`zbk_der_eisendrache_vivecraft_overlay`](zbk_der_eisendrache_vivecraft_overlay/README.md) | DE Vivecraft source reference; no separate release asset |
 
-## GitHub releases
+## License and credit
 
-The [release workflow](.github/workflows/release-core-packs.yml) runs when a `v<version>` tag is pushed, such as `v1.0.0`. To run it from GitHub, open [Actions > Release Core resource packs](https://github.com/Stews-Creations/zbk_resourcepacks/actions/workflows/release-core-packs.yml), choose **Run workflow** on `main`, and enter an existing version tag. The tag must match the `VERSION` and `pack.mcmeta` version in both Core packs. The workflow publishes exactly two ZIP assets: `zombies_build_kit-v<version>.zip` and `zombies_build_kit_vivecraft_overlay-v<version>.zip`. Each archive contains the tracked contents of its pack folder with `pack.mcmeta` at the root. Map-specific folders are never release assets from this workflow.
-
-All installable packs use ZBK pack version 1.0.0 and retain Minecraft Java 26.2 resource format 88.0. Keep the license and attribution files with each pack when distributing it. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSE.md).
+Keep the license and attribution files with each pack when distributing it. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSE.md).
