@@ -4,6 +4,12 @@ on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Existing release tag (vMAJOR.MINOR.PATCH)'
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -11,24 +17,27 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.version || github.ref_name }}
     steps:
       - name: Check out the tagged revision
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.version || github.ref }}
           persist-credentials: false
 
       - name: Verify pack versions
         shell: bash
         run: |
           set -euo pipefail
-          [[ "$GITHUB_REF_NAME" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || {
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || {
             echo "Expected a version tag such as v1.0.0" >&2
             exit 1
           }
-          version="${GITHUB_REF_NAME#v}"
+          version="${RELEASE_TAG#v}"
           for pack in zombies_build_kit zombies_build_kit_vivecraft_overlay; do
             test "$(tr -d '\r\n' < "$pack/VERSION")" = "$version" || {
-              echo "$pack/VERSION does not match $GITHUB_REF_NAME" >&2
+              echo "$pack/VERSION does not match $RELEASE_TAG" >&2
               exit 1
             }
             python3 - "$pack/pack.mcmeta" "$version" <<'PY'
@@ -46,8 +55,8 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p dist
-          git archive --format=zip --output="dist/zombies_build_kit-${GITHUB_REF_NAME}.zip" HEAD:zombies_build_kit
-          git archive --format=zip --output="dist/zombies_build_kit_vivecraft_overlay-${GITHUB_REF_NAME}.zip" HEAD:zombies_build_kit_vivecraft_overlay
+          git archive --format=zip --output="dist/zombies_build_kit-${RELEASE_TAG}.zip" HEAD:zombies_build_kit
+          git archive --format=zip --output="dist/zombies_build_kit_vivecraft_overlay-${RELEASE_TAG}.zip" HEAD:zombies_build_kit_vivecraft_overlay
           python3 - <<'PY'
           from pathlib import Path
           from zipfile import ZipFile
@@ -72,9 +81,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" \
-            dist/zombies_build_kit-"$GITHUB_REF_NAME".zip \
-            dist/zombies_build_kit_vivecraft_overlay-"$GITHUB_REF_NAME".zip \
-            --title "Zombies Build Kit $GITHUB_REF_NAME" \
+          gh release create "$RELEASE_TAG" \
+            dist/zombies_build_kit-"$RELEASE_TAG".zip \
+            dist/zombies_build_kit_vivecraft_overlay-"$RELEASE_TAG".zip \
+            --title "Zombies Build Kit $RELEASE_TAG" \
             --generate-notes \
             --verify-tag
