@@ -24,7 +24,7 @@ Both release ZIPs place `pack.mcmeta` and `LICENSES/` at the ZIP root. The `LICE
 | Nacht der Untoten world bundle | Core Vivecraft overlay (optional), Nacht, Core |
 | Der Eisendrache world bundle | DE Vivecraft overlay (optional), Core Vivecraft overlay (optional), DE, Core |
 
-The map rows show resource priority inside a bundled world, not extra downloads for players. The DE pack intentionally overrides Minecraft's native inventory background with the original quest inventory board. The Core pack also owns its documented required Minecraft overrides.
+The map rows show resource priority inside a bundled world, not extra downloads for players. The DE pack intentionally overrides Minecraft's native inventory background with the original quest inventory board. Core's Minecraft HUD overrides hide vanilla hearts, hunger icons, and the experience bar so they do not overlap the ZBK HUD.
 
 ## Override Core sounds
 

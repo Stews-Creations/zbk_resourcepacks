@@ -4,6 +4,8 @@ This resource pack supplies shared Zombies Build Kit item models, textures, HUD 
 
 Core assets live under `assets/zbk/`. Use `zbk:` for Core item models, fonts, textures, and sounds. The matching datapack keeps its `zombies:` gameplay function and dialog IDs.
 
+Core also overrides Minecraft HUD sprites to hide the vanilla hearts, hunger icons, and experience bar behind the ZBK HUD. These transparent sprites cover normal and special heart variants and belong in the base pack so every map gets the same HUD behavior.
+
 Core sound events include round and game cues, dog and teleporter effects, menu music, and four-character gameplay callouts. These play with Core alone. Map resource packs may supply their own location music, radio tracks, and Easter egg audio.
 
 ## Install
