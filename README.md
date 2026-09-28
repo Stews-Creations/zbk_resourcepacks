@@ -13,3 +13,12 @@ The base pack must match the core datapack's asset identifiers. The optional VR 
 ## Source and outputs
 
 Required runtime textures, sounds, fonts, models, and item definitions belong in source control, along with portable maintained generators. Blockbench authoring projects and workspaces are excluded. Record external provenance and regeneration limitations where source is intentionally absent. Packaged release archives, temporary exports, and local tooling state are excluded. Map-specific audio, artwork, and models are outside the core scope even when they occupy shared namespaces.
+
+## License and credit
+
+Free noncommercial use, modification, and sharing are allowed with credit to
+[MiniStew](https://www.youtube.com/@MiniStew). Monetized videos and streams are
+allowed under the [media permission](MEDIA_PERMISSION.md). Selling covered ZBK
+content or maps containing it, or charging for server access, is not covered
+by that permission. See [licensing and attribution](LICENSE.md) for the code
+and asset licenses, their scope, and redistribution requirements.
