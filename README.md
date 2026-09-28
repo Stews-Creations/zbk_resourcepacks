@@ -14,7 +14,7 @@ Download the map's world file and follow its installation instructions. The worl
 2. If you use Vivecraft, also download `zombies_build_kit_vivecraft_overlay-v<version>.zip` from the same release and enable it above Core.
 3. If you are making a map, include its required map assets with the world you distribute. The map pack folders in this repository are source references, not separate GitHub release downloads.
 
-Both release ZIPs place `pack.mcmeta` at the ZIP root. Enable the Core resource pack in Minecraft; enable the optional overlay above it. Keep the datapack, resource pack, and overlay on matching versions.
+Both release ZIPs place `pack.mcmeta` and `LICENSES/` at the ZIP root. The `LICENSES/` folder contains the license, notice, and media permission documents. Enable the Core resource pack in Minecraft; enable the optional overlay above it. Keep the datapack, resource pack, and overlay on matching versions.
 
 ## Supported combinations
 
@@ -737,4 +737,4 @@ The Core sound catalog is [`assets/zbk/sounds.json`](zombies_build_kit/assets/zb
 
 ## License and credit
 
-Keep the license and attribution files with each pack when distributing it. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSE.md).
+Keep the packaged `LICENSES/` folder with each pack when distributing it. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSE.md).

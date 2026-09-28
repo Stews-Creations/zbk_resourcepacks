@@ -17,4 +17,4 @@ Refresh resources with F3+T after changing files.
 
 ## Pack metadata and licensing
 
-`VERSION` and the `zbk.version` metadata field identify this resource pack as version 1.0.0. Minecraft's 26.2 resource format metadata remains at format 88.0. ZBK custom assets use the project license and media permission included here. Third-party notices are preserved in `LICENSES/`.
+`VERSION` and the `zbk.version` metadata field identify this resource pack as version 1.0.0. Minecraft's 26.2 resource format metadata remains at format 88.0. ZBK custom assets use the project license and media permission. The release ZIP keeps these documents and third-party notices in `LICENSES/`.
