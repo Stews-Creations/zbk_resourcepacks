@@ -1,0 +1,6 @@
+{
+	"model": {
+		"type": "minecraft:model",
+		"model": "zombies:item/trip_mine_box"
+	}
+}

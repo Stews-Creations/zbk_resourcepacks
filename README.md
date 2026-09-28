@@ -1,24 +1,31 @@
-# ZBK Resource Packs
+# Zombies Build Kit Resource Packs
 
-Implementation is not available yet.
+This repository contains the installable Core resource pack, optional map resource packs, and optional Vivecraft overlays. Core supplies shared ZBK item models, textures, HUD fonts, gameplay audio, and generated shared models. Map packs supply only their map assets and require the matching Core datapack and resource pack.
 
-## Responsibility
+## Install and package
 
-This repository will own reusable visual and audio assets for Zombies Build Kit. It is planned to provide a base resource pack and an optional VR overlay so users can select the VR presentation independently.
+1. Run `python tools/validate_packs.py` to check each supported combination. Add `--datapack ../datapacks/zombies_build_kit` for Core item, font, and sound ID checks when that checkout is available.
+2. Run `python tools/package_packs.py` to create separate ZIPs for every installable resource pack.
+3. Install the selected packs into `.minecraft/resourcepacks`. For a map, place its pack above Core. Enable Vivecraft overlays above the corresponding base packs.
 
-## Dependencies
+## Supported combinations
 
-The base pack must match the core datapack's asset identifiers. The optional VR overlay is layered above the base pack and reuses its shared assets. Exact client compatibility and packaging dependencies remain to be verified during migration.
+| World | Resource pack stack, highest priority first |
+| --- | --- |
+| Core only | Core Vivecraft overlay (optional), Core |
+| Nacht der Untoten | Core Vivecraft overlay (optional), Nacht, Core |
+| Der Eisendrache | DE Vivecraft overlay (optional), Core Vivecraft overlay (optional), DE, Core |
 
-## Source and outputs
+Install only the matching map pack for a world. The DE pack intentionally overrides Minecraft's native inventory background with the original quest inventory board. The Core pack also owns its documented required Minecraft overrides.
 
-Required runtime textures, sounds, fonts, models, and item definitions belong in source control, along with portable maintained generators. Blockbench authoring projects and workspaces are excluded. Record external provenance and regeneration limitations where source is intentionally absent. Packaged release archives, temporary exports, and local tooling state are excluded. Map-specific audio, artwork, and models are outside the core scope even when they occupy shared namespaces.
+## Pack contents
 
-## License and credit
+| Folder | Use |
+| --- | --- |
+| [`zombies_build_kit`](zombies_build_kit/README.md) | Shared runtime assets used by Core |
+| [`zombies_build_kit_vivecraft_overlay`](zombies_build_kit_vivecraft_overlay/README.md) | Optional Vivecraft held-weapon transforms for Core |
+| [`zbk_nacht_der_untoten`](zbk_nacht_der_untoten/README.md) | Nacht der Untoten audio and map assets |
+| [`zbk_der_eisendrache`](zbk_der_eisendrache/README.md) | Der Eisendrache audio, models, textures, fonts, and inventory screen |
+| [`zbk_der_eisendrache_vivecraft_overlay`](zbk_der_eisendrache_vivecraft_overlay/README.md) | Optional Vivecraft bow transforms for Der Eisendrache |
 
-Free noncommercial use, modification, and sharing are allowed with credit to
-[MiniStew](https://www.youtube.com/@MiniStew). Monetized videos and streams are
-allowed under the [media permission](MEDIA_PERMISSION.md). Selling covered ZBK
-content or maps containing it, or charging for server access, is not covered
-by that permission. See [licensing and attribution](LICENSE.md) for the code
-and asset licenses, their scope, and redistribution requirements.
+All installable packs use ZBK pack version 1.0.0 and retain Minecraft Java 26.2 resource format 88.0. The packager includes supported runtime assets and required license and attribution files. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSE.md).

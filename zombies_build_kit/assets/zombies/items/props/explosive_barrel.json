@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "zombies:props/explosive_barrel"
+  }
+}

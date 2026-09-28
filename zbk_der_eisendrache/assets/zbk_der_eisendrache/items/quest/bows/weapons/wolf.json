@@ -1,0 +1,512 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:using_item",
+    "on_false": {
+      "type": "minecraft:select",
+      "property": "minecraft:display_context",
+      "cases": [
+        {
+          "when": [
+            "firstperson_righthand",
+            "thirdperson_righthand"
+          ],
+          "model": {
+            "type": "minecraft:model",
+            "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/idle"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/idle"
+      }
+    },
+    "on_true": {
+      "type": "minecraft:range_dispatch",
+      "property": "minecraft:use_duration",
+      "fallback": {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+          {
+            "when": [
+              "firstperson_righthand",
+              "thirdperson_righthand"
+            ],
+            "model": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_00"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_00"
+        }
+      },
+      "entries": [
+        {
+          "threshold": 1,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_01"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_01"
+            }
+          }
+        },
+        {
+          "threshold": 2,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_02"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_02"
+            }
+          }
+        },
+        {
+          "threshold": 3,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_03"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_03"
+            }
+          }
+        },
+        {
+          "threshold": 4,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_04"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_04"
+            }
+          }
+        },
+        {
+          "threshold": 5,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_05"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_05"
+            }
+          }
+        },
+        {
+          "threshold": 6,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_06"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_06"
+            }
+          }
+        },
+        {
+          "threshold": 7,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_07"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_07"
+            }
+          }
+        },
+        {
+          "threshold": 8,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_08"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_08"
+            }
+          }
+        },
+        {
+          "threshold": 9,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_09"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_09"
+            }
+          }
+        },
+        {
+          "threshold": 10,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_10"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_10"
+            }
+          }
+        },
+        {
+          "threshold": 11,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_11"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_11"
+            }
+          }
+        },
+        {
+          "threshold": 12,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_12"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_12"
+            }
+          }
+        },
+        {
+          "threshold": 13,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_13"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_13"
+            }
+          }
+        },
+        {
+          "threshold": 14,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_14"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_14"
+            }
+          }
+        },
+        {
+          "threshold": 15,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_15"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_15"
+            }
+          }
+        },
+        {
+          "threshold": 16,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_16"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_16"
+            }
+          }
+        },
+        {
+          "threshold": 17,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_17"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_17"
+            }
+          }
+        },
+        {
+          "threshold": 18,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_18"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_18"
+            }
+          }
+        },
+        {
+          "threshold": 19,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_19"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_19"
+            }
+          }
+        },
+        {
+          "threshold": 20,
+          "model": {
+            "type": "minecraft:select",
+            "property": "minecraft:display_context",
+            "cases": [
+              {
+                "when": [
+                  "firstperson_righthand",
+                  "thirdperson_righthand"
+                ],
+                "model": {
+                  "type": "minecraft:model",
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/right_hand/draw_20"
+                }
+              }
+            ],
+            "fallback": {
+              "type": "minecraft:model",
+              "model": "zbk_der_eisendrache:quest/bows/weapons/wolf/draw_20"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

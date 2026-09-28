@@ -1,0 +1,641 @@
+{
+	"credit": "ZBK Double Points drop model",
+	"texture_size": [
+		16,
+		16
+	],
+	"textures": {
+		"solid_gold": "zombies:item/powerups/solid_gold",
+		"particle": "zombies:item/powerups/solid_gold"
+	},
+	"elements": [
+		{
+			"name": "two_lower_left",
+			"from": [
+				5.409,
+				5.2,
+				6.925
+			],
+			"to": [
+				7.409,
+				7.25,
+				9.075
+			],
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				}
+			}
+		},
+		{
+			"name": "two_bottom",
+			"from": [
+				1.859,
+				3.25,
+				6.925
+			],
+			"to": [
+				7.409,
+				5.2,
+				9.075
+			],
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				}
+			}
+		},
+		{
+			"name": "x_bar_a",
+			"from": [
+				8.459,
+				6.15,
+				6.925
+			],
+			"to": [
+				13.459,
+				7.85,
+				9.075
+			],
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				}
+			},
+			"rotation": {
+				"axis": "z",
+				"angle": -45,
+				"origin": [
+					10.959,
+					7,
+					8
+				]
+			}
+		},
+		{
+			"name": "x_bar_b",
+			"from": [
+				8.459,
+				6.15,
+				6.925
+			],
+			"to": [
+				13.459,
+				7.85,
+				9.075
+			],
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				}
+			},
+			"rotation": {
+				"axis": "z",
+				"angle": 45,
+				"origin": [
+					10.959,
+					7,
+					8
+				]
+			}
+		},
+		{
+			"name": "two_bottom",
+			"from": [
+				1.859,
+				7.25,
+				6.925
+			],
+			"to": [
+				7.409,
+				9.2,
+				9.075
+			],
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				}
+			}
+		},
+		{
+			"name": "two_bottom",
+			"from": [
+				1.841,
+				11.25,
+				6.925
+			],
+			"to": [
+				7.391,
+				13.2,
+				9.075
+			],
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold",
+					"rotation": 180
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold",
+					"rotation": 180
+				}
+			}
+		},
+		{
+			"name": "two_lower_left",
+			"from": [
+				1.841,
+				9.2,
+				6.925
+			],
+			"to": [
+				3.841,
+				11.25,
+				9.075
+			],
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold"
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold",
+					"rotation": 180
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#solid_gold",
+					"rotation": 180
+				}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [
+				75,
+				0,
+				0
+			],
+			"translation": [
+				0,
+				2.5,
+				2.25
+			],
+			"scale": [
+				0.42,
+				0.42,
+				0.42
+			]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [
+				75,
+				0,
+				0
+			],
+			"translation": [
+				0,
+				2.5,
+				2.25
+			],
+			"scale": [
+				0.42,
+				0.42,
+				0.42
+			]
+		},
+		"firstperson_righthand": {
+			"rotation": [
+				0,
+				160,
+				0
+			],
+			"translation": [
+				0.75,
+				4.25,
+				0
+			],
+			"scale": [
+				0.42,
+				0.42,
+				0.42
+			]
+		},
+		"firstperson_lefthand": {
+			"rotation": [
+				0,
+				-160,
+				0
+			],
+			"translation": [
+				-0.75,
+				4.25,
+				0
+			],
+			"scale": [
+				0.42,
+				0.42,
+				0.42
+			]
+		},
+		"ground": {
+			"translation": [
+				0,
+				3.25,
+				0
+			],
+			"scale": [
+				0.42,
+				0.42,
+				0.42
+			]
+		},
+		"gui": {
+			"rotation": [
+				30,
+				-135,
+				0
+			],
+			"scale": [
+				0.82,
+				0.82,
+				0.82
+			]
+		},
+		"head": {
+			"translation": [
+				0,
+				8,
+				0
+			],
+			"scale": [
+				0.55,
+				0.55,
+				0.55
+			]
+		},
+		"fixed": {
+			"rotation": [
+				0,
+				-180,
+				0
+			],
+			"translation": [
+				0,
+				5.5,
+				0
+			],
+			"scale": [
+				1.12,
+				1.12,
+				1.12
+			]
+		}
+	}
+}

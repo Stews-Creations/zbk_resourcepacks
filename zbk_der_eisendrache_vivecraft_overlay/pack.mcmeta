@@ -1,0 +1,16 @@
+{
+  "pack": {
+    "description": "ZBK Der Eisendrache Vivecraft Overlay | ZBK resource pack v1.0.0 | Optional Vivecraft bow transforms",
+    "min_format": [
+      88,
+      0
+    ],
+    "max_format": [
+      88,
+      0
+    ]
+  },
+  "zbk": {
+    "version": "1.0.0"
+  }
+}

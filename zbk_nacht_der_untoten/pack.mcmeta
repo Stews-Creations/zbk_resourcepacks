@@ -1,0 +1,16 @@
+{
+  "pack": {
+    "description": "ZBK Nacht der Untoten | ZBK resource pack v1.0.0",
+    "min_format": [
+      88,
+      0
+    ],
+    "max_format": [
+      88,
+      0
+    ]
+  },
+  "zbk": {
+    "version": "1.0.0"
+  }
+}

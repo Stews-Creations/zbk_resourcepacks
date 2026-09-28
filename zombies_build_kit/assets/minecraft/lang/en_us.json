@@ -1,0 +1,10 @@
+{
+  "death.attack.explosion": "%1$s learned that grenades don't play nice. Kaboom!",
+  "death.attack.explosion.player": "%1$s learned that grenades don't play nice. Kaboom!",
+  "death.attack.explosion.item": "%1$s learned that grenades don't play nice. Kaboom!",
+  "death.attack.badRespawnPoint.message": "%1$s was killed by [Intentional Game Design]",
+  "death.attack.explosion.message": "%1$s blew up",
+  "death.attack.mob": "%1$s fought valiantly but succumbed to the undead horde!",
+  "mount.onboard": "You are downed – wait for revive",
+  "container.crafting": ""
+}

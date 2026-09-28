@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "zombies:item/double_points_hud",
+    "particle": "zombies:item/double_points_hud"
+  }
+}

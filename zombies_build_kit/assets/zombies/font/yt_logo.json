@@ -1,0 +1,11 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "zombies:font/yt_logo.png",
+      "ascent": 160,
+      "height": 160,
+      "chars": ["\uE003"]
+    }
+  ]
+}

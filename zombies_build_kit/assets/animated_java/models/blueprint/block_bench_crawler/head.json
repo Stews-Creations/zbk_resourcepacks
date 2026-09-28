@@ -1,0 +1,49 @@
+{
+	"textures": {
+		"0": "animated_java:blueprint/block_bench_crawler/zombified_piglin",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [4, 8, 4],
+			"to": [12, 16, 12],
+			"shade": false,
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, -16, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [2.25, 2, 4.25, 4],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [0.25, 2, 2.25, 4],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [6.25, 2, 8.25, 4],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [4.25, 2, 6.25, 4],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [4.25, 2, 2.25, 0],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [6.25, 0, 4.25, 2],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}
