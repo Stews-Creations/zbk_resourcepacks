@@ -8,4 +8,4 @@ Enable `Zombies Build Kit Core` below `ZBK Nacht der Untoten`. Keep unrelated ma
 
 ## Contents and license
 
-The pack restores the original Nacht der Untoten event sounds, radio clips, and related map assets. Install it with the matching Nacht datapack; installing it alone does not add gameplay. ZBK custom assets use the project license and media permission included here. Third-party notices are preserved in `LICENSES/`.
+The pack supplies Nacht radio clips, its map theme, and the barrel Easter egg. Shared rounds, dogs, teleporters, menu music, and character callouts come from Core. Install this pack with the matching Nacht datapack; installing it alone does not add gameplay. ZBK custom assets use the project license and media permission included here. Third-party notices are preserved in `LICENSES/`.

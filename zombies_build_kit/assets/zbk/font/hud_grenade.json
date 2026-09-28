@@ -1,0 +1,19 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/hud_grenade.png",
+      "height": 4,
+      "ascent": -55,
+      "chars": [
+        "0123456789"
+      ]
+    },
+    {
+      "type": "space",
+      "advances": {
+        " ": 3
+      }
+    }
+  ]
+}

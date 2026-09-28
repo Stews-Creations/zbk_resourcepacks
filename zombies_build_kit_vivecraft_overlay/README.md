@@ -2,6 +2,8 @@
 
 This optional resource pack supplies Vivecraft-specific held-item transforms for shared Zombies Build Kit weapon models. It depends on the Core resource pack and matching datapack.
 
+The overlay overrides Core item models in the `zbk:` asset namespace.
+
 ## Installation
 
 Enable `Zombies Build Kit Vivecraft Overlay` above `Zombies Build Kit Core`. For Der Eisendrache bows, enable `ZBK Der Eisendrache Vivecraft Overlay` above the DE map pack as well. Refresh resources with F3+T after changing files.

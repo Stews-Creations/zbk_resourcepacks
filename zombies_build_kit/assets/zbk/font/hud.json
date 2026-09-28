@@ -1,0 +1,178 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/round_digits.png",
+            "ascent": 8,
+            "height": 71,
+            "chars": [
+                "\ue070\ue071\ue072\ue073\ue074\ue075\ue076\ue077\ue078\ue079"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/round_tallies.png",
+            "ascent": 8,
+            "height": 71,
+            "chars": [
+                "\ue080\ue081\ue082\ue083\ue084"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/grenade.png",
+            "ascent": -54,
+            "height": 5,
+            "chars": [
+                "\ue001"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/grenade_empty.png",
+            "ascent": -54,
+            "height": 5,
+            "chars": [
+                "\ue002"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/blast_furnace.png",
+            "ascent": -33,
+            "height": 14,
+            "chars": [
+                "\ue011"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/dead_wire.png",
+            "ascent": -33,
+            "height": 14,
+            "chars": [
+                "\ue012"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/fire_works.png",
+            "ascent": -33,
+            "height": 14,
+            "chars": [
+                "\ue013"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/thunder_wall.png",
+            "ascent": -33,
+            "height": 14,
+            "chars": [
+                "\ue014"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/turned.png",
+            "ascent": -33,
+            "height": 14,
+            "chars": [
+                "\ue015"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/perk_juggernog.png",
+            "ascent": 8,
+            "height": 69,
+            "chars": [
+                "\ue030"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/perk_stamina_up.png",
+            "ascent": 8,
+            "height": 69,
+            "chars": [
+                "\ue031"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/perk_speed_cola.png",
+            "ascent": 8,
+            "height": 69,
+            "chars": [
+                "\ue032"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/perk_double_tap.png",
+            "ascent": 8,
+            "height": 69,
+            "chars": [
+                "\ue033"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/perk_quick_revive.png",
+            "ascent": 8,
+            "height": 69,
+            "chars": [
+                "\ue034"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/perk_mule_kick.png",
+            "ascent": 8,
+            "height": 69,
+            "chars": [
+                "\ue035"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/insta_kill_hud.png",
+            "ascent": 8,
+            "height": 53,
+            "chars": [
+                "\ue040"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/double_points_hud.png",
+            "ascent": 8,
+            "height": 53,
+            "chars": [
+                "\ue041"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "zbk:font/hud/fire_sale_hud.png",
+            "ascent": 8,
+            "height": 53,
+            "chars": [
+                "\ue042"
+            ]
+        },
+        {
+            "type": "space",
+            "advances": {
+                "\ue043": 15,
+                "\ue044": 13,
+                "\ue046": 19
+            }
+        },
+        {
+            "type": "reference",
+            "id": "minecraft:default"
+        }
+    ]
+}

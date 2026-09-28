@@ -1,0 +1,19 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/hud_label_small.png",
+      "height": 4,
+      "ascent": -54,
+      "chars": [
+        "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+      ]
+    },
+    {
+      "type": "space",
+      "advances": {
+        " ": 2
+      }
+    }
+  ]
+}

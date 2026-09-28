@@ -1,0 +1,9 @@
+{
+	"parent": "zbk:item/rifle",
+	"display": {
+		"firstperson_lefthand": {
+			"translation": [-9,  8, 0.38],
+			"scale": [0.8, 0.8, 0.8]
+		}
+	}
+}

@@ -2,6 +2,10 @@
 
 This resource pack supplies shared Zombies Build Kit item models, textures, HUD fonts, gameplay audio, generated shared models, and reusable Panzer presentation assets. It requires the matching ZBK Core datapack.
 
+Core assets live under `assets/zbk/`. Use `zbk:` for Core item models, fonts, textures, and sounds. The matching datapack keeps its `zombies:` gameplay function and dialog IDs.
+
+Core sound events include round and game cues, dog and teleporter effects, menu music, and four-character gameplay callouts. These play with Core alone. Map resource packs may supply their own location music, radio tracks, and Easter egg audio.
+
 ## Install
 
 1. Install the matching Core datapack and this pack.

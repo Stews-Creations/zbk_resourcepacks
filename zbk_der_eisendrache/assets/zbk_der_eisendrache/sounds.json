@@ -1652,12 +1652,12 @@
   },
   "game.over": {
     "sounds": [
-      "zombies:game/game_over"
+      "zbk:game/game_over"
     ]
   },
   "game.cash": {
     "sounds": [
-      "zombies:game/cash"
+      "zbk:game/cash"
     ]
   },
   "power.on": {
@@ -1695,32 +1695,32 @@
   },
   "drops.carpenter": {
     "sounds": [
-      "zombies:drops/carpenter"
+      "zbk:drops/carpenter"
     ]
   },
   "drops.double_points": {
     "sounds": [
-      "zombies:drops/double_points"
+      "zbk:drops/double_points"
     ]
   },
   "drops.fire_sale": {
     "sounds": [
-      "zombies:drops/fire_sale"
+      "zbk:drops/fire_sale"
     ]
   },
   "drops.insta_kill": {
     "sounds": [
-      "zombies:drops/insta_kill"
+      "zbk:drops/insta_kill"
     ]
   },
   "drops.max_ammo": {
     "sounds": [
-      "zombies:drops/max_ammo"
+      "zbk:drops/max_ammo"
     ]
   },
   "drops.nuke": {
     "sounds": [
-      "zombies:drops/nuke"
+      "zbk:drops/nuke"
     ]
   },
   "voice.dog": {
@@ -1765,7 +1765,7 @@
   },
   "game.game_over": {
     "sounds": [
-      "zombies:game/game_over"
+      "zbk:game/game_over"
     ]
   },
   "power.castle_poweron": {

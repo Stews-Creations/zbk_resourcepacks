@@ -1,0 +1,28 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "minecraft:composite",
+          "models": [
+            {
+              "type": "minecraft:model",
+              "model": "zbk:item/rocket_shield/shield"
+            },
+            {
+              "type": "minecraft:model",
+              "model": "zbk:item/rocket_shield/charges/1"
+            }
+          ]
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "zbk:item/rocket_shield/shield"
+    }
+  }
+}

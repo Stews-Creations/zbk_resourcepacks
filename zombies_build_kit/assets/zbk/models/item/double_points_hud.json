@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "zbk:item/double_points_hud",
+    "particle": "zbk:item/double_points_hud"
+  }
+}

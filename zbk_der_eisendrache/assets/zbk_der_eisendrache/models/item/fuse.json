@@ -5,9 +5,9 @@
     16
   ],
   "textures": {
-    "gold": "zombies:item/powerups/solid_gold",
+    "gold": "zbk:item/powerups/solid_gold",
     "dark_blue": "zbk_der_eisendrache:item/pack_a_punch/deep_blue",
-    "cyan": "zombies:item/pack_a_punch/body_blue",
+    "cyan": "zbk:item/pack_a_punch/body_blue",
     "glass": "minecraft:block/light_blue_stained_glass",
     "particle": "zbk_der_eisendrache:item/pack_a_punch/deep_blue"
   },

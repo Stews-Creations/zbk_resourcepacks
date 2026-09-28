@@ -1,0 +1,19 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/hud_magazine.png",
+      "height": 11,
+      "ascent": -38,
+      "chars": [
+        "0123456789"
+      ]
+    },
+    {
+      "type": "space",
+      "advances": {
+        " ": 6
+      }
+    }
+  ]
+}

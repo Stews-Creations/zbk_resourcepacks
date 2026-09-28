@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"0": "zombies:item/pack_a_punch/dark",
+		"0": "zbk:item/pack_a_punch/dark",
 		"1": "zbk_der_eisendrache:item/pack_a_punch/deep_blue",
 		"particle": "zbk_der_eisendrache:item/pack_a_punch/deep_blue"
 	},

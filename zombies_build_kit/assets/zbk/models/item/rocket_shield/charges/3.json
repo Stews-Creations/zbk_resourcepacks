@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:item/generated",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "zbk:item/rocket_shield/charges/3"
+  },
+  "display": {
+    "gui": {
+      "translation": [
+        0,
+        0,
+        8
+      ]
+    }
+  }
+}

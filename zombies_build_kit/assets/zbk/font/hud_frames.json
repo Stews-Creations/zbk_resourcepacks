@@ -1,0 +1,139 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/ammo_frame.png",
+      "height": 36,
+      "ascent": -26,
+      "chars": [
+        "\ue090"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/ammo_frame_right.png",
+      "height": 36,
+      "ascent": -26,
+      "chars": [
+        "\ue099"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/ammo_frame_blast_furnace.png",
+      "height": 36,
+      "ascent": -26,
+      "chars": [
+        "\ue0a0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/ammo_frame_dead_wire.png",
+      "height": 36,
+      "ascent": -26,
+      "chars": [
+        "\ue0a1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/ammo_frame_fire_works.png",
+      "height": 36,
+      "ascent": -26,
+      "chars": [
+        "\ue0a2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/ammo_frame_thunder_wall.png",
+      "height": 36,
+      "ascent": -26,
+      "chars": [
+        "\ue0a3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/ammo_frame_turned.png",
+      "height": 36,
+      "ascent": -26,
+      "chars": [
+        "\ue0a4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/equipment_4.png",
+      "ascent": -45,
+      "height": 23,
+      "chars": [
+        "\ue0b0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/equipment_5.png",
+      "ascent": -45,
+      "height": 23,
+      "chars": [
+        "\ue0b1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/equipment_6.png",
+      "ascent": -45,
+      "height": 23,
+      "chars": [
+        "\ue0b2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/equipment_7.png",
+      "ascent": -45,
+      "height": 23,
+      "chars": [
+        "\ue0b3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/equipment_4_selected.png",
+      "ascent": -45,
+      "height": 23,
+      "chars": [
+        "\ue0b4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/equipment_5_selected.png",
+      "ascent": -45,
+      "height": 23,
+      "chars": [
+        "\ue0b5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/equipment_6_selected.png",
+      "ascent": -45,
+      "height": 23,
+      "chars": [
+        "\ue0b6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "zbk:font/hud/equipment_7_selected.png",
+      "ascent": -45,
+      "height": 23,
+      "chars": [
+        "\ue0b7"
+      ]
+    }
+  ]
+}

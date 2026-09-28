@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "zombies:item/insta_kill_hud",
-    "particle": "zombies:item/insta_kill_hud"
-  }
-}
