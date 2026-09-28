@@ -68,33 +68,21 @@ jobs:
           git archive --format=zip --output="dist/zombies_build_kit_vivecraft_overlay-${RELEASE_TAG}.zip" HEAD:zombies_build_kit_vivecraft_overlay
           python3 - <<'PY'
           from pathlib import Path
-          from zipfile import ZIP_DEFLATED, ZipFile
+          from zipfile import ZipFile
 
           archives = sorted(Path("dist").glob("*.zip"))
           if len(archives) != 2:
               raise SystemExit("Release must contain exactly two pack archives")
-          license_docs = {"LICENSE.md", "NOTICE", "MEDIA_PERMISSION.md"}
+          license_docs = {"LICENSES/LICENSE.md", "LICENSES/NOTICE", "LICENSES/MEDIA_PERMISSION.md"}
           for archive in archives:
-              updated = archive.with_suffix(".tmp")
-              with ZipFile(archive) as source, ZipFile(updated, "w", ZIP_DEFLATED) as packaged:
-                  source_names = set(source.namelist())
-                  if not license_docs <= source_names:
-                      raise SystemExit(f"{archive} is missing license documents")
-                  for name in source.namelist():
-                      content = source.read(name)
-                      destination = f"LICENSES/{name}" if name in license_docs else name
-                      if name == "LICENSE.md":
-                          content = content.replace(b"](LICENSES/", b"](")
-                      packaged.writestr(destination, content)
-              updated.replace(archive)
               with ZipFile(archive) as packaged:
                   names = set(packaged.namelist())
                   if "pack.mcmeta" not in names or "VERSION" not in names:
                       raise SystemExit(f"{archive} has no pack metadata at ZIP root")
                   if not any(name.startswith("assets/zbk/") for name in names):
                       raise SystemExit(f"{archive} has no Core assets")
-                  if license_docs & names or not {f"LICENSES/{name}" for name in license_docs} <= names:
-                      raise SystemExit(f"{archive} has misplaced license documents")
+                  if not license_docs <= names:
+                      raise SystemExit(f"{archive} is missing license documents")
                   if any("AGENTS.md" in name or "/.codex/" in name for name in names):
                       raise SystemExit(f"{archive} contains local-only files")
                   print(f"{archive}: {len(names)} entries")

@@ -737,4 +737,4 @@ The Core sound catalog is [`assets/zbk/sounds.json`](zombies_build_kit/assets/zb
 
 ## License and credit
 
-Keep the packaged `LICENSES/` folder with each pack when distributing it. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSE.md).
+Keep the packaged `LICENSES/` folder with each pack when distributing it. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSES/LICENSE.md).
