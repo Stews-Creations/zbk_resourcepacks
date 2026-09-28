@@ -4,9 +4,8 @@ This repository contains the installable Core resource pack, optional map resour
 
 ## Install and package
 
-1. Run `python tools/validate_packs.py` to check each supported combination. Add `--datapack ../datapacks/zombies_build_kit` for Core item, font, and sound ID checks when that checkout is available.
-2. Run `python tools/package_packs.py` to create separate ZIPs for every installable resource pack.
-3. Install the selected packs into `.minecraft/resourcepacks`. For a map, place its pack above Core. Enable Vivecraft overlays above the corresponding base packs.
+1. Copy each selected pack folder into `.minecraft/resourcepacks`, or ZIP each folder's contents so `pack.mcmeta` is at the ZIP root.
+2. For a map, place its pack above Core. Enable Vivecraft overlays above the corresponding base packs.
 
 ## Supported combinations
 
@@ -28,4 +27,4 @@ Install only the matching map pack for a world. The DE pack intentionally overri
 | [`zbk_der_eisendrache`](zbk_der_eisendrache/README.md) | Der Eisendrache audio, models, textures, fonts, and inventory screen |
 | [`zbk_der_eisendrache_vivecraft_overlay`](zbk_der_eisendrache_vivecraft_overlay/README.md) | Optional Vivecraft bow transforms for Der Eisendrache |
 
-All installable packs use ZBK pack version 1.0.0 and retain Minecraft Java 26.2 resource format 88.0. The packager includes supported runtime assets and required license and attribution files. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSE.md).
+All installable packs use ZBK pack version 1.0.0 and retain Minecraft Java 26.2 resource format 88.0. Keep the license and attribution files with each pack when distributing it. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSE.md).

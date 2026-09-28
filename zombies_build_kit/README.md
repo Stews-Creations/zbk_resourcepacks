@@ -8,7 +8,7 @@ This resource pack supplies shared Zombies Build Kit item models, textures, HUD 
 2. Enable Core for a Core-only world, or place one map resource pack above Core for Nacht der Untoten or Der Eisendrache.
 3. For Vivecraft, enable the Core Vivecraft overlay above Core. For Der Eisendrache bows, also enable its map Vivecraft overlay above the DE map pack.
 
-Refresh resources with F3+T after changing files. Run `python tools/validate_packs.py` and `python tools/package_packs.py` from the resource pack repository root to validate and package the supported packs.
+Refresh resources with F3+T after changing files.
 
 ## Pack metadata and licensing
 
