@@ -20,11 +20,11 @@ The Death Machine uses the updated six-barrel geometry through `models/item/guns
 
 The seven cabinet models use item IDs `zbk:map_elements/perks/<perk>` and geometry under `models/item/map_elements/perks/`. These are separate from the `zbk:perks/<perk>` bottle items. The matching datapack supplies placement, barrier collision, purchases, and deletion, while old block machines remain supported.
 
-`tools/export_core_machines.py` in the resource-pack repository exports the runtime JSON and textures from supplied Blockbench projects. Authoring projects are not distributed. Exporting requires Python with NumPy and Pillow; run `python tools/test_optimize_core_machines.py` and `python tools/validate_core_machines.py` from the resource-pack repository after export.
+The runtime JSON and textures are exported from Blockbench projects. Authoring projects and export scripts are not distributed.
 
 The authoring projects trace each cabinet in image coordinates, with the left of the artwork at low X. Minecraft draws a north face with the left of its texture at high X, so the exporter mirrors every cabinet across X=8. Raised panels, signs, and lettering then sit over the matching cabinet artwork. Fixed display transforms are measured on the mirrored source before simplification, so placement stays centered on the footprint.
 
-The exporter applies `tools/optimize_core_machines.py` to all seven cabinets:
+The exporter simplifies all seven cabinets:
 
 - Adjacent contour slices merge into slabs that enclose their source slices. A slab's outline varies by at most 0.25 model units, or 0.4 units on parts without artwork. Curves are deliberately stepped to reduce rendering cost.
 - Slab UVs follow the source projection. Slices merge only while the artwork stays within about 2.5 texels of its traced position; otherwise they remain separate.
