@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "zbk:item/powerups/fire_sale_hud",
+    "particle": "zbk:item/powerups/fire_sale_hud"
+  }
+}

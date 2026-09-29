@@ -11,168 +11,168 @@
         "threshold": 9,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/electric_inactive"
+          "model": "zbk_der_eisendrache:quest/hud/electric/electric_inactive"
         }
       },
       {
         "threshold": 10,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/electric_0"
+          "model": "zbk_der_eisendrache:quest/hud/electric/electric_0"
         }
       },
       {
         "threshold": 11,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/electric_1"
+          "model": "zbk_der_eisendrache:quest/hud/electric/electric_1"
         }
       },
       {
         "threshold": 12,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/electric_2"
+          "model": "zbk_der_eisendrache:quest/hud/electric/electric_2"
         }
       },
       {
         "threshold": 13,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/electric_3"
+          "model": "zbk_der_eisendrache:quest/hud/electric/electric_3"
         }
       },
       {
         "threshold": 14,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/electric_4"
+          "model": "zbk_der_eisendrache:quest/hud/electric/electric_4"
         }
       },
       {
         "threshold": 19,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/fire_inactive"
+          "model": "zbk_der_eisendrache:quest/hud/fire/fire_inactive"
         }
       },
       {
         "threshold": 20,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/fire_0"
+          "model": "zbk_der_eisendrache:quest/hud/fire/fire_0"
         }
       },
       {
         "threshold": 21,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/fire_1"
+          "model": "zbk_der_eisendrache:quest/hud/fire/fire_1"
         }
       },
       {
         "threshold": 22,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/fire_2"
+          "model": "zbk_der_eisendrache:quest/hud/fire/fire_2"
         }
       },
       {
         "threshold": 23,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/fire_3"
+          "model": "zbk_der_eisendrache:quest/hud/fire/fire_3"
         }
       },
       {
         "threshold": 24,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/fire_4"
+          "model": "zbk_der_eisendrache:quest/hud/fire/fire_4"
         }
       },
       {
         "threshold": 29,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/wolf_inactive"
+          "model": "zbk_der_eisendrache:quest/hud/wolf/wolf_inactive"
         }
       },
       {
         "threshold": 30,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/wolf_0"
+          "model": "zbk_der_eisendrache:quest/hud/wolf/wolf_0"
         }
       },
       {
         "threshold": 31,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/wolf_1"
+          "model": "zbk_der_eisendrache:quest/hud/wolf/wolf_1"
         }
       },
       {
         "threshold": 32,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/wolf_2"
+          "model": "zbk_der_eisendrache:quest/hud/wolf/wolf_2"
         }
       },
       {
         "threshold": 33,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/wolf_3"
+          "model": "zbk_der_eisendrache:quest/hud/wolf/wolf_3"
         }
       },
       {
         "threshold": 34,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/wolf_4"
+          "model": "zbk_der_eisendrache:quest/hud/wolf/wolf_4"
         }
       },
       {
         "threshold": 39,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/void_inactive"
+          "model": "zbk_der_eisendrache:quest/hud/void/void_inactive"
         }
       },
       {
         "threshold": 40,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/void_0"
+          "model": "zbk_der_eisendrache:quest/hud/void/void_0"
         }
       },
       {
         "threshold": 41,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/void_1"
+          "model": "zbk_der_eisendrache:quest/hud/void/void_1"
         }
       },
       {
         "threshold": 42,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/void_2"
+          "model": "zbk_der_eisendrache:quest/hud/void/void_2"
         }
       },
       {
         "threshold": 43,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/void_3"
+          "model": "zbk_der_eisendrache:quest/hud/void/void_3"
         }
       },
       {
         "threshold": 44,
         "model": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/hud/void_4"
+          "model": "zbk_der_eisendrache:quest/hud/void/void_4"
         }
       }
     ]

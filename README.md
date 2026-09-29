@@ -1,6 +1,6 @@
-# Zombies Build Kit Resource Packs
+# Zombies Build Kit resource packs
 
-This repository contains the installable Core resource pack, its optional Vivecraft overlay, and source references for map-specific assets. Core supplies shared ZBK item models, textures, HUD fonts, gameplay audio, and generated shared models. Released map worlds bundle their required Core and map resource assets.
+This repository contains the installable base resource pack, its optional Vivecraft overlay, and source references for map-specific assets. The base pack supplies shared ZBK item models, textures, HUD fonts, gameplay audio, and generated shared models. Released map worlds bundle the required base and map resource assets.
 
 ## Install
 
@@ -10,27 +10,27 @@ Download the map's world file and follow its installation instructions. The worl
 
 ### Build your own world
 
-1. Download `zombies_build_kit-v<version>.zip` from the [latest resource pack release](https://github.com/Stews-Creations/zbk_resourcepacks/releases/latest), plus the matching [Core datapack](https://github.com/Stews-Creations/zbk_datapacks). Put the resource pack ZIP in `.minecraft/resourcepacks` and the datapack in the world's `datapacks` folder.
-2. If you use Vivecraft, also download `zombies_build_kit_vivecraft_overlay-v<version>.zip` from the same release and enable it above Core.
+1. Download `zombies_build_kit-v<version>.zip` from the [latest resource pack release](https://github.com/Stews-Creations/zbk_resourcepacks/releases/latest), plus the matching [base datapack](https://github.com/Stews-Creations/zbk_datapacks). Put the resource pack ZIP in `.minecraft/resourcepacks` and the datapack in the world's `datapacks` folder.
+2. If you use Vivecraft, also download `zombies_build_kit_vivecraft_overlay-v<version>.zip` from the same release and enable it above the base pack.
 3. If you are making a map, include its required map assets with the world you distribute. The map pack folders in this repository are source references, not separate GitHub release downloads.
 
-Both release ZIPs place `pack.mcmeta` and `LICENSES/` at the ZIP root. The `LICENSES/` folder contains the license, notice, and media permission documents. Enable the Core resource pack in Minecraft; enable the optional overlay above it. Keep the datapack, resource pack, and overlay on matching versions.
+Both release ZIPs place `pack.mcmeta` and `LICENSES/` at the ZIP root. The `LICENSES/` folder contains the license, notice, and media permission documents. Enable the base resource pack in Minecraft; enable the optional overlay above it. Keep the datapack, resource pack, and overlay on matching versions.
 
 ## Supported combinations
 
 | World | Resource pack stack, highest priority first |
 | --- | --- |
-| Custom Core world | Core Vivecraft overlay (optional), Core |
-| Nacht der Untoten world bundle | Core Vivecraft overlay (optional), Nacht, Core |
-| Der Eisendrache world bundle | DE Vivecraft overlay (optional), Core Vivecraft overlay (optional), DE, Core |
+| Custom map world | Base pack Vivecraft overlay (optional), the base pack |
+| Nacht der Untoten world bundle | Base pack Vivecraft overlay (optional), Nacht, the base pack |
+| Der Eisendrache world bundle | DE Vivecraft overlay (optional), the base pack Vivecraft overlay (optional), DE, the base pack |
 
-The map rows show resource priority inside a bundled world, not extra downloads for players. The DE pack intentionally overrides Minecraft's native inventory background with the original quest inventory board. Core's Minecraft HUD overrides hide vanilla hearts, hunger icons, and the experience bar so they do not overlap the ZBK HUD.
+The map rows show resource priority inside a bundled world, not extra downloads for players. The DE pack intentionally overrides Minecraft's native inventory background with the original quest inventory board. The base pack's Minecraft HUD overrides hide vanilla hearts, hunger icons, and the experience bar so they do not overlap the ZBK HUD.
 
-## Override Core sounds
+## Override the base pack sounds
 
-A map resource pack can replace any Core audio file listed below. Put the replacement `.ogg` at the same path under `assets/zbk/sounds/` in the map pack, then place that pack above Core. For example, to replace `round/start.ogg`, use `assets/zbk/sounds/round/start.ogg`. Keep the file name and directory path exact. The Core sound event continues to work without editing `sounds.json`.
+A map resource pack can replace any base pack audio file listed below. Put the replacement `.ogg` at the same path under `assets/zbk/sounds/` in the map pack, then place that pack above the base pack. For example, to replace `round/start.ogg`, use `assets/zbk/sounds/round/start.ogg`. Keep the file name and directory path exact. The base pack sound event continues to work without editing `sounds.json`.
 
-The 544 paths below are relative to `assets/zbk/sounds/` in the Core pack. Expand a category to see every file in it.
+The 544 paths below are relative to `assets/zbk/sounds/` in the base pack. Expand a category to see every file in it.
 
 <details><summary>buildables (1 file)</summary>
 
@@ -82,7 +82,7 @@ grenade/throw.ogg
 
 </details>
 
-<details><summary>guns (96 files)</summary>
+<details><summary>guns (86 files)</summary>
 
 ```text
 guns/bo3/205_brecci_1.ogg
@@ -165,22 +165,12 @@ guns/bo3/xm53_1.ogg
 guns/bo3/xr2_1.ogg
 guns/bo3/xr2_silenced.ogg
 guns/death_machine.ogg
-guns/double_barrel_shotgun.ogg
 guns/enemy_hit.ogg
-guns/flame_thrower.ogg
-guns/flame_thrower_loop.ogg
-guns/flame_thrower_start.ogg
 guns/grenade.ogg
 guns/kn44_1.ogg
 guns/light_machine_gun.ogg
-guns/pistol_shot.ogg
-guns/rainbow_rifle.ogg
 guns/raygun.ogg
-guns/rifle.ogg
 guns/sheiva.ogg
-guns/shotgun.ogg
-guns/sniper.ogg
-guns/sniper_reload.ogg
 ```
 
 </details>
@@ -266,6 +256,23 @@ perks/perk_buy.ogg
 perks/quick_revive.ogg
 perks/speed_cola.ogg
 perks/stamina_up.ogg
+```
+
+</details>
+
+<details><summary>radio (10 files)</summary>
+
+```text
+radio/all_mixed_up.ogg
+radio/areia.ogg
+radio/dog_fire.ogg
+radio/dusk.ogg
+radio/first_fight.ogg
+radio/konigratzer_marsch.ogg
+radio/russian_theme.ogg
+radio/stag_push.ogg
+radio/true_crime_track_4.ogg
+radio/wtf.ogg
 ```
 
 </details>
@@ -723,14 +730,14 @@ wonderfizz/rand_perk_mach_stop.ogg
 
 </details>
 
-The Core sound catalog is [`assets/zbk/sounds.json`](zombies_build_kit/assets/zbk/sounds.json). Change it only when you need different sound-event behavior; replacing individual `.ogg` files does not require a catalog change.
+The base pack sound catalog is [`assets/zbk/sounds.json`](zombies_build_kit/assets/zbk/sounds.json). Change it only when you need different sound-event behavior; replacing individual `.ogg` files does not require a catalog change.
 
 ## Pack contents
 
 | Folder | Use |
 | --- | --- |
-| [`zombies_build_kit`](zombies_build_kit/README.md) | Released Core runtime resource pack |
-| [`zombies_build_kit_vivecraft_overlay`](zombies_build_kit_vivecraft_overlay/README.md) | Released optional Core Vivecraft overlay |
+| [`zombies_build_kit`](zombies_build_kit/README.md) | Released base pack runtime resource pack |
+| [`zombies_build_kit_vivecraft_overlay`](zombies_build_kit_vivecraft_overlay/README.md) | Released optional base pack Vivecraft overlay |
 | [`zbk_nacht_der_untoten`](zbk_nacht_der_untoten/README.md) | Nacht source reference for world bundles; no separate release asset |
 | [`zbk_der_eisendrache`](zbk_der_eisendrache/README.md) | Der Eisendrache source reference for world bundles; no separate release asset |
 | [`zbk_der_eisendrache_vivecraft_overlay`](zbk_der_eisendrache_vivecraft_overlay/README.md) | DE Vivecraft source reference; no separate release asset |
