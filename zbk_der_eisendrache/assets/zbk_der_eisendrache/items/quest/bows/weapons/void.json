@@ -36,13 +36,13 @@
             ],
             "model": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_00"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_00"
             }
           }
         ],
         "fallback": {
           "type": "minecraft:model",
-          "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_00"
+          "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_00"
         }
       },
       "entries": [
@@ -59,13 +59,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_01"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_01"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_01"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_01"
             }
           }
         },
@@ -82,13 +82,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_02"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_02"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_02"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_02"
             }
           }
         },
@@ -105,13 +105,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_03"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_03"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_03"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_03"
             }
           }
         },
@@ -128,13 +128,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_04"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_04"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_04"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_04"
             }
           }
         },
@@ -151,13 +151,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_05"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_05"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_05"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_05"
             }
           }
         },
@@ -174,13 +174,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_06"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_06"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_06"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_06"
             }
           }
         },
@@ -197,13 +197,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_07"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_07"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_07"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_07"
             }
           }
         },
@@ -220,13 +220,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_08"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_08"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_08"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_08"
             }
           }
         },
@@ -243,13 +243,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_09"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_09"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_09"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_09"
             }
           }
         },
@@ -266,13 +266,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_10"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_10"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_10"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_10"
             }
           }
         },
@@ -289,13 +289,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_11"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_11"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_11"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_11"
             }
           }
         },
@@ -312,13 +312,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_12"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_12"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_12"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_12"
             }
           }
         },
@@ -335,13 +335,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_13"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_13"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_13"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_13"
             }
           }
         },
@@ -358,13 +358,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_14"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_14"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_14"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_14"
             }
           }
         },
@@ -381,13 +381,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_15"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_15"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_15"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_15"
             }
           }
         },
@@ -404,13 +404,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_16"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_16"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_16"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_16"
             }
           }
         },
@@ -427,13 +427,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_17"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_17"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_17"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_17"
             }
           }
         },
@@ -450,13 +450,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_18"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_18"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_18"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_18"
             }
           }
         },
@@ -473,13 +473,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_19"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_19"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_19"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_19"
             }
           }
         },
@@ -496,13 +496,13 @@
                 ],
                 "model": {
                   "type": "minecraft:model",
-                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw_20"
+                  "model": "zbk_der_eisendrache:quest/bows/weapons/void/right_hand/draw/draw_20"
                 }
               }
             ],
             "fallback": {
               "type": "minecraft:model",
-              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw_20"
+              "model": "zbk_der_eisendrache:quest/bows/weapons/void/draw/draw_20"
             }
           }
         }

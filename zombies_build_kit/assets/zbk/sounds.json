@@ -59,24 +59,9 @@
       "zbk:guns/death_machine"
     ]
   },
-  "guns.double_barrel_shotgun": {
-    "sounds": [
-      "zbk:guns/double_barrel_shotgun"
-    ]
-  },
   "guns.enemy_hit": {
     "sounds": [
       "zbk:guns/enemy_hit"
-    ]
-  },
-  "guns.flame_thrower": {
-    "sounds": [
-      "zbk:guns/flame_thrower"
-    ]
-  },
-  "guns.flame_thrower_loop": {
-    "sounds": [
-      "zbk:guns/flame_thrower_loop"
     ]
   },
   "guns.grenade": {
@@ -89,16 +74,6 @@
       "zbk:guns/light_machine_gun"
     ]
   },
-  "guns.pistol_shot": {
-    "sounds": [
-      "zbk:guns/pistol_shot"
-    ]
-  },
-  "guns.rainbow_rifle": {
-    "sounds": [
-      "zbk:guns/rainbow_rifle"
-    ]
-  },
   "guns.raygun": {
     "sounds": [
       "zbk:guns/raygun"
@@ -107,26 +82,6 @@
   "guns.sheiva": {
     "sounds": [
       "zbk:guns/sheiva"
-    ]
-  },
-  "guns.rifle": {
-    "sounds": [
-      "zbk:guns/rifle"
-    ]
-  },
-  "guns.shotgun": {
-    "sounds": [
-      "zbk:guns/shotgun"
-    ]
-  },
-  "guns.sniper": {
-    "sounds": [
-      "zbk:guns/sniper"
-    ]
-  },
-  "guns.sniper_reload": {
-    "sounds": [
-      "zbk:guns/sniper_reload"
     ]
   },
   "jump_pads.landing_pad_activated": {
@@ -242,11 +197,6 @@
   "perks.stamina_up": {
     "sounds": [
       "zbk:perks/stamina_up"
-    ]
-  },
-  "guns.flame_thrower_start": {
-    "sounds": [
-      "zbk:guns/flame_thrower_start"
     ]
   },
   "jump_pads.launch_pad_on": {
@@ -3741,6 +3691,100 @@
   "teleporter.available": {
     "sounds": [
       "zbk:teleporter/teleporter_available"
+    ]
+  },
+  "radio.wtf": {
+    "sounds": [
+      "zbk:radio/wtf"
+    ]
+  },
+  "radio.dog_fire": {
+    "sounds": [
+      "zbk:radio/dog_fire"
+    ]
+  },
+  "radio.true_crime_track_4": {
+    "sounds": [
+      "zbk:radio/true_crime_track_4"
+    ]
+  },
+  "radio.all_mixed_up": {
+    "sounds": [
+      "zbk:radio/all_mixed_up"
+    ]
+  },
+  "radio.dusk": {
+    "sounds": [
+      "zbk:radio/dusk"
+    ]
+  },
+  "radio.konigratzer_marsch": {
+    "sounds": [
+      "zbk:radio/konigratzer_marsch"
+    ]
+  },
+  "radio.first_fight": {
+    "sounds": [
+      "zbk:radio/first_fight"
+    ]
+  },
+  "radio.russian_theme": {
+    "sounds": [
+      "zbk:radio/russian_theme"
+    ]
+  },
+  "radio.areia": {
+    "sounds": [
+      "zbk:radio/areia"
+    ]
+  },
+  "radio.stag_push": {
+    "sounds": [
+      "zbk:radio/stag_push"
+    ]
+  },
+  "radio": {
+    "sounds": [
+      {
+        "name": "zbk:radio/all_mixed_up",
+        "stream": true
+      },
+      {
+        "name": "zbk:radio/areia",
+        "stream": true
+      },
+      {
+        "name": "zbk:radio/dog_fire",
+        "stream": true
+      },
+      {
+        "name": "zbk:radio/dusk",
+        "stream": true
+      },
+      {
+        "name": "zbk:radio/first_fight",
+        "stream": true
+      },
+      {
+        "name": "zbk:radio/konigratzer_marsch",
+        "stream": true
+      },
+      {
+        "name": "zbk:radio/russian_theme",
+        "stream": true
+      },
+      {
+        "name": "zbk:radio/stag_push",
+        "stream": true
+      },
+      {
+        "name": "zbk:radio/true_crime_track_4",
+        "stream": true
+      },
+      {
+        "name": "zbk:radio/wtf",
+        "stream": true
+      }
     ]
   }
 }

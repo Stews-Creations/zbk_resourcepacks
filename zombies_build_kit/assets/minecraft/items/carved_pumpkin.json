@@ -15,7 +15,7 @@
             "index": 1,
             "on_true": {
               "type": "minecraft:model",
-              "model": "zbk:item/rocket_shield/stowed_head"
+              "model": "zbk:item/special_equipment/rocket_shield/stowed_head"
             },
             "on_false": {
               "type": "minecraft:empty"
