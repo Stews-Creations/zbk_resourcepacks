@@ -1,12 +1,20 @@
-# Zombies Build Kit Core Resource Pack
+# Zombies Build Kit Base resource pack
 
-This resource pack supplies shared Zombies Build Kit item models, textures, HUD fonts, gameplay audio, generated shared models, and reusable Panzer presentation assets. It requires the matching ZBK Core datapack.
+This resource pack supplies shared Zombies Build Kit item models, textures, HUD fonts, gameplay audio, generated shared models, and reusable Panzer presentation assets. It requires the matching ZBK base pack datapack.
 
-Core assets live under `assets/zbk/`. Use `zbk:` for Core item models, fonts, textures, and sounds. The matching datapack keeps its `zombies:` gameplay function and dialog IDs.
+The base pack assets live under `assets/zbk/`. Use `zbk:` for the base pack item models, fonts, textures, and sounds. The matching datapack keeps its `zombies:` gameplay function and dialog IDs.
 
-Core also overrides Minecraft HUD sprites to hide the vanilla hearts, hunger icons, and experience bar behind the ZBK HUD. These transparent sprites cover normal and special heart variants and belong in the base pack so every map gets the same HUD behavior.
+The base pack also overrides Minecraft HUD sprites to hide the vanilla hearts, hunger icons, and experience bar behind the ZBK HUD. These transparent sprites cover normal and special heart variants and belong in the base pack so every map gets the same HUD behavior.
 
-Core sound events include round and game cues, dog and teleporter effects, menu music, and four-character gameplay callouts. These play with Core alone. Map resource packs may supply their own location music, radio tracks, and Easter egg audio.
+Magenta stained glass panes use the empty `zbk:block/invisible` model as invisible collision blocks for Build Kit mechanics. The override lives in the base pack so map datapacks can use the same block consistently.
+
+The base pack also supplies the zombie and zombified piglin textures used by shared enemies, plus the supplied Richtofen mannequin skin at `assets/minecraft/textures/entity/player/richtofen.png`. The base pack mannequin profiles reference the zombie and Richtofen textures by their vanilla resource paths, so keep these files in the base pack for every map.
+
+The base pack sound events include round and game cues, dog and teleporter effects, menu music, and four-character gameplay callouts. These play with the base pack alone. The reusable radio includes all ten tracks through `zbk:radio`, with audio files under `assets/zbk/sounds/radio/`; it requires no map add-on. Individual tracks also have `zbk:radio.<track>` events. Map resource packs may supply their own location music and Easter egg audio.
+
+## Death Machine model
+
+The Death Machine uses the updated six-barrel geometry through `models/item/guns/special/death_machine_geometry.json`. Both the base model and Vivecraft overlay inherit this geometry while retaining their own held-item transforms. The item atlas registers its texture directory. This weapon belongs to the base pack and requires no map resource pack.
 
 ## Perk machine models
 
@@ -45,13 +53,45 @@ Reload resources with F3+T after updating the pack.
 
 ## Install
 
-1. For your own world, install the matching Core datapack and download the Core resource pack ZIP from the [repository releases](https://github.com/Stews-Creations/zbk_resourcepacks/releases/latest). Enable the resource pack in Minecraft.
-2. For Vivecraft, download the optional Core Vivecraft overlay from the same release and enable it above Core.
+1. For your own world, install the matching base datapack and download the base resource pack ZIP from the [repository releases](https://github.com/Stews-Creations/zbk_resourcepacks/releases/latest). Enable the resource pack in Minecraft.
+2. For Vivecraft, download the optional base pack Vivecraft overlay from the same release and enable it above the base pack.
 
-Released ZBK map worlds include their required Core and map resource assets, so players need only the world download. Map pack folders in this repository are references for world authors.
+Released ZBK map worlds include their required base pack and map resource assets, so players need only the world download. Map pack folders in this repository are references for world authors.
 
 Refresh resources with F3+T after changing files.
 
 ## Pack metadata and licensing
 
 `VERSION` and the `zbk.version` metadata field identify this resource pack as version 1.0.0. Minecraft's 26.2 resource format metadata remains at format 88.0. ZBK custom assets use the project license and media permission. The release ZIP keeps these documents and third-party notices in `LICENSES/`.
+
+## Supported guns
+
+Gun models cover the BO3 arsenal, Ray Gun, and Death Machine. Retired generic gun item definitions, models, and textures are not included. Shared audio required by supported weapons remains in the base pack.
+
+## Model organization
+
+Model paths below are relative to `assets/zbk/models/`.
+
+| Folder | Contents |
+| --- | --- |
+| `item/guns/` | `pistols`, `submachine_guns`, `assault_rifles`, `shotguns`, `light_machine_guns`, `sniper_rifles`, and `launchers`; Ray Gun in `wonder_weapons`, Death Machine and its shared geometry in `special` |
+| `wall/guns/` | Wall-buy gun models grouped by the same weapon types |
+| `item/special_equipment/` | Grenade, Monkey Bomb variants, Trip Mine variants, and Rocket Shield parts, charges, and HUD models |
+| `item/powerups/` | Powerup drops and their HUD models |
+| `item/perks/` | Perk item models |
+| `item/melee/` | Knife, Bowie Knife, and puncher |
+| `item/map_elements/` | Workbench, wall-gun marker, and Pack-a-Punch parts |
+| `props/` | Floating vehicles and explosive barrel |
+| `block/` | Invisible collision-block model |
+
+Item definitions under `assets/zbk/items/` follow the same categories, without the model-only `item/` prefix. For example, `zbk:guns/pistols/mr6` selects `zbk:item/guns/pistols/mr6`, and `zbk:wall/guns/pistols/mr6` selects its wall model. Rocket Shield charge variants use `special_equipment/rocket_shield/shield_1` through `shield_3`. The shared `empty` definition stays at the root. Generated enemy assets retain their exporter-owned paths under `assets/animated_java/`.
+
+Install the matching datapack with these item IDs. Previously saved items using old IDs must be recreated; reload resources with F3+T and rebuild placed displays through their owning system.
+
+Custom model overrides must use these categorized paths. The base pack Vivecraft overlay mirrors the held-gun paths so its transforms apply to the same models.
+
+## Texture organization
+
+Textures under `assets/zbk/textures/item/` match the model categories: `guns/<type>/`, `special_equipment/`, `powerups/`, `perks/`, `melee/`, and `map_elements/`. Held and wall-buy guns share the same gun textures. Perk bottles live alongside their perk textures; equipment layers, Rocket Shield charges, and Pack-a-Punch materials stay together in their respective subfolders.
+
+Death Machine textures, including the exported `death_machine_0.png`, live in `item/guns/special/`. Its exporter and item-atlas entry use that directory. Fonts and HUD imagery remain under `textures/font/`, shared enemy materials under `textures/entity/`, and vanilla overrides at their required Minecraft paths. Sound paths are unchanged. Custom texture overrides must mirror the categorized texture paths.

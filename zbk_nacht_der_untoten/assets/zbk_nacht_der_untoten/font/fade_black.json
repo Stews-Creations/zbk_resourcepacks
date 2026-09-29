@@ -1,0 +1,11 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "zbk_nacht_der_untoten:font/black.png",
+      "ascent": 128,
+      "height": 256,
+      "chars": ["\uE01F"]
+    }
+  ]
+}

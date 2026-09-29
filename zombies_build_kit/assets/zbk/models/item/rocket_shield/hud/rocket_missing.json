@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "zbk:item/rocket_shield/hud/rocket_missing"
-  }
-}

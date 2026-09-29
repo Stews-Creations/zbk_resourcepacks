@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "zbk_der_eisendrache:item/quest/hud/wolf/wolf_1"
+  }
+}

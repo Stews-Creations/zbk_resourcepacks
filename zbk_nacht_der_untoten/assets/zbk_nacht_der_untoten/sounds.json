@@ -2,104 +2,15 @@
   "music.ambient": {
     "sounds": []
   },
-  "nacht_der_untoten.radio.wtf": {
+  "environment.flickering_light": {
     "sounds": [
-      "zbk_nacht_der_untoten:nacht_der_untoten/radio/wtf"
-    ]
-  },
-  "nacht_der_untoten.radio.dog_fire": {
-    "sounds": [
-      "zbk_nacht_der_untoten:nacht_der_untoten/radio/dog_fire"
-    ]
-  },
-  "nacht_der_untoten.radio.true_crime_track_4": {
-    "sounds": [
-      "zbk_nacht_der_untoten:nacht_der_untoten/radio/true_crime_track_4"
-    ]
-  },
-  "nacht_der_untoten.radio.all_mixed_up": {
-    "sounds": [
-      "zbk_nacht_der_untoten:nacht_der_untoten/radio/all_mixed_up"
-    ]
-  },
-  "nacht_der_untoten.radio.dusk": {
-    "sounds": [
-      "zbk_nacht_der_untoten:nacht_der_untoten/radio/dusk"
-    ]
-  },
-  "nacht_der_untoten.radio.konigratzer_marsch": {
-    "sounds": [
-      "zbk_nacht_der_untoten:nacht_der_untoten/radio/konigratzer_marsch"
-    ]
-  },
-  "nacht_der_untoten.radio.first_fight": {
-    "sounds": [
-      "zbk_nacht_der_untoten:nacht_der_untoten/radio/first_fight"
-    ]
-  },
-  "nacht_der_untoten.radio.russian_theme": {
-    "sounds": [
-      "zbk_nacht_der_untoten:nacht_der_untoten/radio/russian_theme"
-    ]
-  },
-  "nacht_der_untoten.radio.areia": {
-    "sounds": [
-      "zbk_nacht_der_untoten:nacht_der_untoten/radio/areia"
-    ]
-  },
-  "nacht_der_untoten.radio.stag_push": {
-    "sounds": [
-      "zbk_nacht_der_untoten:nacht_der_untoten/radio/stag_push"
+      "zbk_nacht_der_untoten:nacht_der_untoten/flickering_light"
     ]
   },
   "ee.barrel": {
     "sounds": [
       {
         "name": "zbk_nacht_der_untoten:nacht_der_untoten/undone",
-        "stream": true
-      }
-    ]
-  },
-  "radio": {
-    "sounds": [
-      {
-        "name": "zbk_nacht_der_untoten:nacht_der_untoten/radio/all_mixed_up",
-        "stream": true
-      },
-      {
-        "name": "zbk_nacht_der_untoten:nacht_der_untoten/radio/areia",
-        "stream": true
-      },
-      {
-        "name": "zbk_nacht_der_untoten:nacht_der_untoten/radio/dog_fire",
-        "stream": true
-      },
-      {
-        "name": "zbk_nacht_der_untoten:nacht_der_untoten/radio/dusk",
-        "stream": true
-      },
-      {
-        "name": "zbk_nacht_der_untoten:nacht_der_untoten/radio/first_fight",
-        "stream": true
-      },
-      {
-        "name": "zbk_nacht_der_untoten:nacht_der_untoten/radio/konigratzer_marsch",
-        "stream": true
-      },
-      {
-        "name": "zbk_nacht_der_untoten:nacht_der_untoten/radio/russian_theme",
-        "stream": true
-      },
-      {
-        "name": "zbk_nacht_der_untoten:nacht_der_untoten/radio/stag_push",
-        "stream": true
-      },
-      {
-        "name": "zbk_nacht_der_untoten:nacht_der_untoten/radio/true_crime_track_4",
-        "stream": true
-      },
-      {
-        "name": "zbk_nacht_der_untoten:nacht_der_untoten/radio/wtf",
         "stream": true
       }
     ]

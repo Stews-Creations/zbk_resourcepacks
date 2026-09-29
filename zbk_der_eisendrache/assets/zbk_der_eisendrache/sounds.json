@@ -132,81 +132,81 @@
   },
   "dragon.dragon_end": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragon_end"
+      "zbk_der_eisendrache:dragon/lifecycle/dragon_end"
     ]
   },
   "dragon.dragon_fire_breathe": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragon_fire_breathe"
+      "zbk_der_eisendrache:dragon/fire/dragon_fire_breathe"
     ]
   },
   "dragon.dragon_fire_breathe_1": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragon_fire_breathe_1"
+      "zbk_der_eisendrache:dragon/fire/dragon_fire_breathe_1"
     ]
   },
   "dragon.dragon_roar_rdy": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragon_roar_rdy"
+      "zbk_der_eisendrache:dragon/idle/dragon_roar_rdy"
     ]
   },
   "dragon.dragon_swallow": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragon_swallow"
+      "zbk_der_eisendrache:dragon/feeding/dragon_swallow"
     ]
   },
   "dragon.dragonhead_bite": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragonhead_bite"
+      "zbk_der_eisendrache:dragon/feeding/dragonhead_bite"
     ]
   },
   "dragon.dragonhead_despawn": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragonhead_despawn"
+      "zbk_der_eisendrache:dragon/lifecycle/dragonhead_despawn"
     ]
   },
   "dragon.dragonhead_eat": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragonhead_eat_f",
-      "zbk_der_eisendrache:dragon/dragonhead_eat_l",
-      "zbk_der_eisendrache:dragon/dragonhead_eat_r"
+      "zbk_der_eisendrache:dragon/feeding/dragonhead_eat_f",
+      "zbk_der_eisendrache:dragon/feeding/dragonhead_eat_l",
+      "zbk_der_eisendrache:dragon/feeding/dragonhead_eat_r"
     ]
   },
   "dragon.dragonhead_idle": {
     "sounds": [
       {
-        "name": "zbk_der_eisendrache:dragon/dragonhead_idle",
+        "name": "zbk_der_eisendrache:dragon/idle/dragonhead_idle",
         "weight": 9
       },
       {
-        "name": "zbk_der_eisendrache:dragon/dragonhead_idle_roar",
+        "name": "zbk_der_eisendrache:dragon/idle/dragonhead_idle_roar",
         "weight": 1
       }
     ]
   },
   "dragon.dragonhead_pre_f": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragonhead_pre_f"
+      "zbk_der_eisendrache:dragon/feeding/dragonhead_pre_f"
     ]
   },
   "dragon.dragonhead_pre_l": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragonhead_pre_l"
+      "zbk_der_eisendrache:dragon/feeding/dragonhead_pre_l"
     ]
   },
   "dragon.dragonhead_pre_r": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragonhead_pre_r"
+      "zbk_der_eisendrache:dragon/feeding/dragonhead_pre_r"
     ]
   },
   "dragon.dragonhead_spawn": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dragonhead_spawn"
+      "zbk_der_eisendrache:dragon/lifecycle/dragonhead_spawn"
     ]
   },
   "dragon.soul_suck": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/soul_suck"
+      "zbk_der_eisendrache:dragon/feeding/soul_suck"
     ]
   },
   "base_bow.base_bow_fire": {
@@ -236,7 +236,7 @@
   },
   "dragon.dst_rock_quake": {
     "sounds": [
-      "zbk_der_eisendrache:dragon/dst_rock_quake"
+      "zbk_der_eisendrache:dragon/lifecycle/dst_rock_quake"
     ]
   },
   "mob.dog.dog_dead": {
@@ -2441,47 +2441,47 @@
   },
   "tram.tram_lever": {
     "sounds": [
-      "zbk_der_eisendrache:tram/tram_lever"
+      "zbk_der_eisendrache:tram/controls/tram_lever"
     ]
   },
   "tram.vox_cast_maxis_gondola_pa_called": {
     "sounds": [
-      "zbk_der_eisendrache:tram/vox_cast_maxis_gondola_pa_called"
+      "zbk_der_eisendrache:tram/announcements/vox_cast_maxis_gondola_pa_called"
     ]
   },
   "tram.vox_cast_maxis_gondola_pa_fuse": {
     "sounds": [
-      "zbk_der_eisendrache:tram/vox_cast_maxis_gondola_pa_fuse"
+      "zbk_der_eisendrache:tram/announcements/vox_cast_maxis_gondola_pa_fuse"
     ]
   },
   "tram.vox_cast_maxis_gondola_pa_arriving": {
     "sounds": [
-      "zbk_der_eisendrache:tram/vox_cast_maxis_gondola_pa_arriving"
+      "zbk_der_eisendrache:tram/announcements/vox_cast_maxis_gondola_pa_arriving"
     ]
   },
   "tram.motor_start": {
     "sounds": [
-      "zbk_der_eisendrache:tram/motor_start"
+      "zbk_der_eisendrache:tram/motor/motor_start"
     ]
   },
   "tram.motor_lp": {
     "sounds": [
-      "zbk_der_eisendrache:tram/motor_lp"
+      "zbk_der_eisendrache:tram/motor/motor_lp"
     ]
   },
   "tram.motor_stop": {
     "sounds": [
-      "zbk_der_eisendrache:tram/motor_stop"
+      "zbk_der_eisendrache:tram/motor/motor_stop"
     ]
   },
   "tram.vox_cast_maxis_gondola_pa_departing": {
     "sounds": [
-      "zbk_der_eisendrache:tram/vox_cast_maxis_gondola_pa_departing"
+      "zbk_der_eisendrache:tram/announcements/vox_cast_maxis_gondola_pa_departing"
     ]
   },
   "tram.tram_gate": {
     "sounds": [
-      "zbk_der_eisendrache:tram/tram_gate"
+      "zbk_der_eisendrache:tram/controls/tram_gate"
     ]
   },
   "der_eisendrache.rocket_test_launch.door_start": {
@@ -2576,107 +2576,107 @@
   },
   "der_eisendrache.quest.bows.electric.weathervane_spin": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/weathervane_spin"
+      "zbk_der_eisendrache:quest/bows/electric/weather_vane/weathervane_spin"
     ]
   },
   "der_eisendrache.quest.bows.electric.stormbow_tornado": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/stormbow_tornado"
+      "zbk_der_eisendrache:quest/bows/electric/storm/stormbow_tornado"
     ]
   },
   "der_eisendrache.quest.bows.electric.stormbow_tornado_vane": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/stormbow_tornado"
+      "zbk_der_eisendrache:quest/bows/electric/storm/stormbow_tornado"
     ]
   },
   "der_eisendrache.quest.bows.electric.arrow_pickup": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/arrow_pickup"
+      "zbk_der_eisendrache:quest/bows/electric/upgrades/arrow_pickup"
     ]
   },
   "der_eisendrache.quest.bows.electric.arrow_reforged": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/arrow_reforged"
+      "zbk_der_eisendrache:quest/bows/electric/upgrades/arrow_reforged"
     ]
   },
   "der_eisendrache.quest.bows.electric.bow_upgrade": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/bow_upgrade"
+      "zbk_der_eisendrache:quest/bows/electric/upgrades/bow_upgrade"
     ]
   },
   "der_eisendrache.quest.bows.electric.bow_pickup": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/bow_pickup"
+      "zbk_der_eisendrache:quest/bows/electric/upgrades/bow_pickup"
     ]
   },
   "der_eisendrache.quest.bows.electric.ritual_bow_place": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/ritual_bow_place"
+      "zbk_der_eisendrache:quest/bows/electric/ritual/ritual_bow_place"
     ]
   },
   "der_eisendrache.quest.bows.electric.tornado_arrow": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/tornado_arrow"
+      "zbk_der_eisendrache:quest/bows/electric/storm/tornado_arrow"
     ]
   },
   "der_eisendrache.quest.bows.electric.arrow_reveal": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/arrow_reveal"
+      "zbk_der_eisendrache:quest/bows/electric/upgrades/arrow_reveal"
     ]
   },
   "der_eisendrache.quest.bows.electric.fire_ignite": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/fire_ignite"
+      "zbk_der_eisendrache:quest/bows/electric/fires/fire_ignite"
     ]
   },
   "der_eisendrache.quest.bows.electric.lightning_ball": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/lightning_ball"
+      "zbk_der_eisendrache:quest/bows/electric/storm/lightning_ball"
     ]
   },
   "der_eisendrache.quest.bows.electric.stormbow_arrowhead": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/stormbow_arrowhead"
+      "zbk_der_eisendrache:quest/bows/electric/storm/stormbow_arrowhead"
     ]
   },
   "der_eisendrache.quest.bows.electric.ball_explo": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/ball_explo"
+      "zbk_der_eisendrache:quest/bows/electric/storm/ball_explo"
     ]
   },
   "der_eisendrache.quest.bows.electric.rune_cross_01": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/rune_cross_01"
+      "zbk_der_eisendrache:quest/bows/electric/runes/rune_cross_01"
     ]
   },
   "der_eisendrache.quest.bows.electric.rune_cross_02": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/rune_cross_02"
+      "zbk_der_eisendrache:quest/bows/electric/runes/rune_cross_02"
     ]
   },
   "der_eisendrache.quest.bows.electric.rune_cross_03": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/rune_cross_03"
+      "zbk_der_eisendrache:quest/bows/electric/runes/rune_cross_03"
     ]
   },
   "der_eisendrache.quest.bows.electric.rune_cross_04": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/rune_cross_04"
+      "zbk_der_eisendrache:quest/bows/electric/runes/rune_cross_04"
     ]
   },
   "der_eisendrache.quest.bows.electric.rune_cross_05": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/rune_cross_05"
+      "zbk_der_eisendrache:quest/bows/electric/runes/rune_cross_05"
     ]
   },
   "der_eisendrache.quest.bows.electric.rune_cross_done": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/rune_cross_done"
+      "zbk_der_eisendrache:quest/bows/electric/runes/rune_cross_done"
     ]
   },
   "der_eisendrache.quest.bows.electric.rune_cross_fail": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/rune_cross_fail"
+      "zbk_der_eisendrache:quest/bows/electric/runes/rune_cross_fail"
     ]
   },
   "der_eisendrache.anti_gravity.room.anti_gravity_stop": {
@@ -2686,7 +2686,7 @@
   },
   "electric_bow.draw_arrowhead": {
     "sounds": [
-      "zbk_der_eisendrache:der_eisendrache/quest/bows/electric/stormbow_arrowhead"
+      "zbk_der_eisendrache:quest/bows/electric/storm/stormbow_arrowhead"
     ]
   }
 }

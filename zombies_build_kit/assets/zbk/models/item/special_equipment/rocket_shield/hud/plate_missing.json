@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "zbk:item/special_equipment/rocket_shield/hud/plate_missing"
+  }
+}

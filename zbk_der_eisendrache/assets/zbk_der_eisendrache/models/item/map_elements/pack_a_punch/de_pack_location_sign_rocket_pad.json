@@ -1,0 +1,12 @@
+{
+  "parent": "zbk_der_eisendrache:item/map_elements/pack_a_punch/de_pack_location_sign_base",
+  "textures": {
+    "face": "zbk_der_eisendrache:item/map_elements/pack_a_punch/de_pack_location_sign/face",
+    "trim": "zbk_der_eisendrache:item/map_elements/pack_a_punch/de_pack_location_sign/trim",
+    "dark": "zbk_der_eisendrache:item/map_elements/pack_a_punch/de_pack_location_sign/dark_metal",
+    "bolt": "zbk_der_eisendrache:item/map_elements/pack_a_punch/de_pack_location_sign/bolt",
+    "lamp_top": "zbk_der_eisendrache:item/map_elements/pack_a_punch/de_pack_location_sign/lamp_unlit",
+    "lamp_left": "zbk_der_eisendrache:item/map_elements/pack_a_punch/de_pack_location_sign/lamp_unlit",
+    "lamp_right": "zbk_der_eisendrache:item/map_elements/pack_a_punch/de_pack_location_sign/lamp_lit"
+  }
+}
