@@ -43,11 +43,7 @@ blockbench/
 
 # Local runtime and deliverables
 /output/
-/tools/*
-!/tools/export_core_machines.py
-!/tools/optimize_core_machines.py
-!/tools/test_optimize_core_machines.py
-!/tools/validate_core_machines.py
+/tools/
 /releases/
 /server/
 /worlds/
