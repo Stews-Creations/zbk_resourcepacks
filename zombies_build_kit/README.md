@@ -12,6 +12,8 @@ The base pack also supplies the zombie and zombified piglin textures used by sha
 
 The base pack sound events include round and game cues, dog and teleporter effects, menu music, and four-character gameplay callouts. These play with the base pack alone. The reusable radio includes all ten tracks through `zbk:radio`, with audio files under `assets/zbk/sounds/radio/`; it requires no map add-on. Individual tracks also have `zbk:radio.<track>` events. Map resource packs may supply their own location music and Easter egg audio.
 
+The base pack silences Minecraft's own background music. `assets/minecraft/sounds.json` replaces every vanilla `music.*` event with the silent `assets/minecraft/sounds/empty.ogg`, so biome, creative, underwater, and dimension tracks never play over a match. The title screen event `music.menu` plays the ZBK menu theme instead. Music discs are unchanged. When a Minecraft release adds a music event, add it to this file.
+
 ## Death Machine model
 
 The Death Machine uses the updated six-barrel geometry through `models/item/guns/special/death_machine_geometry.json`. Both the base model and Vivecraft overlay inherit this geometry while retaining their own held-item transforms. The item atlas registers its texture directory. This weapon belongs to the base pack and requires no map resource pack.
