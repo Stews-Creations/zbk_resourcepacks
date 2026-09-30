@@ -204,6 +204,11 @@
       "zbk:jump_pads/launch_pad_on"
     ]
   },
+  "jump_pads.vox_cast_maxis_pad_pa_activate": {
+    "sounds": [
+      "zbk:jump_pads/vox_cast_maxis_pad_pa_activate"
+    ]
+  },
   "jump_pads.flinger_land": {
     "sounds": [
       "zbk:jump_pads/flinger_land"

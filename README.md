@@ -30,7 +30,7 @@ The map rows show resource priority inside a bundled world, not extra downloads 
 
 A map resource pack can replace any base pack audio file listed below. Put the replacement `.ogg` at the same path under `assets/zbk/sounds/` in the map pack, then place that pack above the base pack. For example, to replace `round/start.ogg`, use `assets/zbk/sounds/round/start.ogg`. Keep the file name and directory path exact. The base pack sound event continues to work without editing `sounds.json`.
 
-The 544 paths below are relative to `assets/zbk/sounds/` in the base pack. Expand a category to see every file in it.
+The 545 paths below are relative to `assets/zbk/sounds/` in the base pack. Expand a category to see every file in it.
 
 <details><summary>buildables (1 file)</summary>
 
@@ -175,7 +175,7 @@ guns/sheiva.ogg
 
 </details>
 
-<details><summary>jump_pads (10 files)</summary>
+<details><summary>jump_pads (11 files)</summary>
 
 ```text
 jump_pads/flinger_activate.ogg
@@ -188,6 +188,7 @@ jump_pads/launch_activate.ogg
 jump_pads/launch_fly.ogg
 jump_pads/launch_land.ogg
 jump_pads/launch_pad_on.ogg
+jump_pads/vox_cast_maxis_pad_pa_activate.ogg
 ```
 
 </details>

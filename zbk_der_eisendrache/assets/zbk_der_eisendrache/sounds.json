@@ -110,11 +110,6 @@
       "zbk_der_eisendrache:game/spawn"
     ]
   },
-  "jump_pads.vox_cast_maxis_pad_pa_activate": {
-    "sounds": [
-      "zbk_der_eisendrache:jump_pads/vox_cast_maxis_pad_pa_activate"
-    ]
-  },
   "power_on.castle_poweron": {
     "sounds": [
       "zbk_der_eisendrache:power_on/castle_poweron"
