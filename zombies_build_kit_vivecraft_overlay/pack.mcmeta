@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "Zombies Build Kit Vivecraft Overlay | ZBK resource pack v1.0.0",
+    "description": "Zombies Build Kit Vivecraft Overlay | ZBK resource pack v${version}",
     "min_format": [
       88,
       0
@@ -11,6 +11,6 @@
     ]
   },
   "zbk": {
-    "version": "1.0.0"
+    "version": "${version}"
   }
 }

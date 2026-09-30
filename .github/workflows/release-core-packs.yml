@@ -39,54 +39,9 @@ jobs:
             echo 'CREATE_TAG=1' >> "$GITHUB_ENV"
           fi
 
-      - name: Verify pack versions
+      - name: Package and inspect Core and Vivecraft overlay
         shell: bash
-        run: |
-          set -euo pipefail
-          version="${RELEASE_TAG#v}"
-          for pack in zombies_build_kit zombies_build_kit_vivecraft_overlay; do
-            test "$(tr -d '\r\n' < "$pack/VERSION")" = "$version" || {
-              echo "$pack/VERSION does not match $RELEASE_TAG" >&2
-              exit 1
-            }
-            python3 - "$pack/pack.mcmeta" "$version" <<'PY'
-          import json
-          import sys
-
-          metadata = json.load(open(sys.argv[1], encoding="utf-8"))
-          if metadata["zbk"]["version"] != sys.argv[2]:
-              raise SystemExit(f"{sys.argv[1]} version does not match tag")
-          PY
-          done
-
-      - name: Package Core and Vivecraft overlay
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p dist
-          git archive --format=zip --output="dist/zombies_build_kit-${RELEASE_TAG}.zip" HEAD:zombies_build_kit
-          git archive --format=zip --output="dist/zombies_build_kit_vivecraft_overlay-${RELEASE_TAG}.zip" HEAD:zombies_build_kit_vivecraft_overlay
-          python3 - <<'PY'
-          from pathlib import Path
-          from zipfile import ZipFile
-
-          archives = sorted(Path("dist").glob("*.zip"))
-          if len(archives) != 2:
-              raise SystemExit("Release must contain exactly two pack archives")
-          license_docs = {"LICENSES/LICENSE.md", "LICENSES/NOTICE", "LICENSES/MEDIA_PERMISSION.md"}
-          for archive in archives:
-              with ZipFile(archive) as packaged:
-                  names = set(packaged.namelist())
-                  if "pack.mcmeta" not in names or "VERSION" not in names:
-                      raise SystemExit(f"{archive} has no pack metadata at ZIP root")
-                  if not any(name.startswith("assets/zbk/") for name in names):
-                      raise SystemExit(f"{archive} has no Core assets")
-                  if not license_docs <= names:
-                      raise SystemExit(f"{archive} is missing license documents")
-                  if any("AGENTS.md" in name or "/.codex/" in name for name in names):
-                      raise SystemExit(f"{archive} contains local-only files")
-                  print(f"{archive}: {len(names)} entries")
-          PY
+        run: python3 .github/scripts/package_packs.py --output dist --tag "$RELEASE_TAG"
 
       - name: Create tag for new release
         if: env.CREATE_TAG == '1'

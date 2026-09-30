@@ -743,6 +743,12 @@ The base pack sound catalog is [`assets/zbk/sounds.json`](zombies_build_kit/asse
 | [`zbk_der_eisendrache`](zbk_der_eisendrache/README.md) | Der Eisendrache source reference for world bundles; no separate release asset |
 | [`zbk_der_eisendrache_vivecraft_overlay`](zbk_der_eisendrache_vivecraft_overlay/README.md) | DE Vivecraft source reference; no separate release asset |
 
+## Releases
+
+[Release Core resource packs](.github/workflows/release-core-packs.yml) publishes a GitHub release with `zombies_build_kit-<tag>.zip` and `zombies_build_kit_vivecraft_overlay-<tag>.zip`. Start it manually from `main` with a `vMAJOR.MINOR.PATCH` tag such as `v1.0.1`; running it with an existing tag rebuilds that revision.
+
+Pack versions are not stored in the repository. Each tracked `pack.mcmeta` carries the `${version}` placeholder, and `.github/scripts/package_packs.py` replaces it with the tag's version and writes a matching `VERSION` file into each ZIP. Run the script locally with `python .github/scripts/package_packs.py --output output/dist` for a `0.0.0-dev` build, or add `--tag v1.0.1` to stamp a version.
+
 ## License and credit
 
 Keep the packaged `LICENSES/` folder with each pack when distributing it. ZBK assets use the repository's noncommercial asset license and media permission. Third-party notices are preserved in each installable pack. See [licensing and attribution](LICENSES/LICENSE.md).
