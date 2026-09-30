@@ -8,7 +8,9 @@ The base pack also overrides Minecraft HUD sprites to hide the vanilla hearts, h
 
 Magenta stained glass panes use the empty `zbk:block/invisible` model as invisible collision blocks for Build Kit mechanics. The override lives in the base pack so map datapacks can use the same block consistently.
 
-The base pack also supplies the zombie and zombified piglin textures used by shared enemies, plus the supplied Richtofen mannequin skin at `assets/minecraft/textures/entity/player/richtofen.png`. The base pack mannequin profiles reference the zombie and Richtofen textures by their vanilla resource paths, so keep these files in the base pack for every map.
+The base pack also supplies the zombie and zombified piglin textures used by shared enemies, the hellhound wolf textures under `assets/minecraft/textures/entity/wolf/` used by dog rounds, and the supplied Richtofen mannequin skin at `assets/minecraft/textures/entity/player/richtofen.png`. The base pack mannequin profiles reference the zombie and Richtofen textures by their vanilla resource paths, so keep these files in the base pack for every map.
+
+Dog rounds equip players with a carved pumpkin whose head model is hidden, so the fog comes from the pumpkin overlay. The base pack replaces that overlay at `assets/minecraft/textures/misc/pumpkinblur.png` with the ZBK dog round fog.
 
 The base pack sound events include round and game cues, dog and teleporter effects, menu music, and four-character gameplay callouts. These play with the base pack alone. The reusable radio includes all ten tracks through `zbk:radio`, with audio files under `assets/zbk/sounds/radio/`; it requires no map add-on. Individual tracks also have `zbk:radio.<track>` events. Map resource packs may supply their own location music and Easter egg audio.
 
