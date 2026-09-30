@@ -320,6 +320,306 @@
     ],
     "subtitle": "subtitles.entity.zombified_piglin.death"
   },
+  "entity.zombified_piglin.angry": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.baby_wolf.ambient": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.baby_wolf.death": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.baby_wolf.growl": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.baby_wolf.hurt": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.baby_wolf.pant": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.baby_wolf.whine": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf.ambient": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf.death": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf.growl": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf.hurt": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf.pant": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf.shake": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf.whine": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_angry.ambient": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_angry.death": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_angry.growl": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_angry.hurt": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_angry.pant": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_angry.whine": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_big.ambient": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_big.death": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_big.growl": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_big.hurt": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_big.pant": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_big.whine": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_cute.ambient": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_cute.death": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_cute.growl": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_cute.hurt": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_cute.pant": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_cute.whine": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_grumpy.ambient": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_grumpy.death": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_grumpy.growl": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_grumpy.hurt": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_grumpy.pant": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_grumpy.whine": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_puglin.ambient": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_puglin.death": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_puglin.growl": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_puglin.hurt": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_puglin.pant": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_puglin.whine": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_sad.ambient": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_sad.death": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_sad.growl": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_sad.hurt": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_sad.pant": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
+  "entity.wolf_sad.whine": {
+    "replace": true,
+    "sounds": [
+      "empty"
+    ]
+  },
   "music.creative": {
     "replace": true,
     "sounds": [
